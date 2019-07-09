@@ -1,0 +1,50 @@
+img {
+    height: 250px;
+    width: 250px;
+    float: left;
+    margin: 18px;
+}
+
+h1 {
+    color: darkgreen;
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+    text-align: center;
+    font-weight: bolder;
+}
+
+p {
+    line-height: 25px;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.container {
+    text-align: center;
+}
+
+.center {
+    display: inline-block;
+    max-width: 700px;
+    text-align: left;
+}
