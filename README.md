@@ -1,1 +1,3 @@
 # assignments
+
+day 1
