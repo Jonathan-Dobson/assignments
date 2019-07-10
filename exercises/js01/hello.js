@@ -24,4 +24,6 @@ function sayHello(name,age){
 }
 
 
-console.log(sayHello("Jonathan",37))
+console.log(sayHello("Nathan",37))
+
+
