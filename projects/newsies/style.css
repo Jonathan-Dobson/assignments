@@ -1,0 +1,53 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+.publisher {
+    font-size: 500%;
+    text-align: center;
+    margin: 30px;
+}
+
+.row{
+    text-align: center;
+}
+
+.column1 {
+    width: 300px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.column2 {
+    width: 600px;
+    margin: 15px;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+}
+
+.column3 {
+    width: 300px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.article {
+}
+.article > p {
+    line-height: 24px;
+    text-align: justify;
+    font-size: 130%;
+}
+.article > p > .red{
+    color: darkred;
+    font-weight: bold;
+}
+
+.headline {
+    font-size: 180%;
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 10px;
+}

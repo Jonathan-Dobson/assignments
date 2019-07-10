@@ -9,19 +9,25 @@ Find a way to select all span tags inside the paragraph with the class of credit
 You could also optionally figure out how to make the cursor change to the little hand when the user is hovering over it to mimic even more closely a real link.
 Select the "film-description" ID, make the font a little smaller and change it to an italics style. */
 
+@font-face{
+    font-family: myFont;
+    src: url('./fonts/Barriecito-Regular.ttf')
+}
+
 body {
     background-color: #111111;
 }
 
 h1 {
+    font-family: myFont;
     color: #E2E80F;
     text-align: center;
-    font-size: 160%;
+    font-size: 260%;
 }
 
 p {
     color: #eeeeee;
-    font-size: 120%;
+    font-size: 140%;
     line-height: 34px;
 }
 
@@ -35,3 +41,4 @@ p > span.credits {
     font-style: italic;
     font-size: 98%;
 }
+

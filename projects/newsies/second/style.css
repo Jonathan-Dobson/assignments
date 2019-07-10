@@ -1,0 +1,16 @@
+.row{
+    background-color: crimson;
+    border: 1px solid blue;
+}
+
+.column{
+    background-color: rgb(33, 192, 18);
+    border: 1px solid blue;
+    height: 100px;
+}
+
+.article{
+    background-color: aquamarine;
+    border: 1px solid blue;
+    width: 400px;
+}
