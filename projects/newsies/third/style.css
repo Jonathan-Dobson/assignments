@@ -30,7 +30,7 @@ body {
     text-align: justify;
 }
 
-.story-title{
+.bold-title{
     font-weight: bold;
 }
 
@@ -64,5 +64,13 @@ body {
 
 .highlight{
     background-color: #d3d3d3;
+}
+
+.rounded-banner{
+    border: none;
+    border-radius: 25px;
+    padding: 9px 9px 9px 9px;
+    margin: 9px 9px 9px 9px;
+    background-color: rgb(180, 180, 180);
 }
 
