@@ -1,0 +1,93 @@
+/* Basic Setup */
+
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('./OpenSans-Regular.ttf')
+}
+
+body {
+    text-align: center;
+}
+
+.container {
+    display: inline-block;
+    width: 60%;
+}
+
+
+/* Title */
+
+.align-left {
+    text-align: left;
+    margin: 20px;
+}
+
+.title {
+    font-family: OpenSans;
+    font-size: 46px;
+}
+
+.subtitle {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+/* Box */
+
+.container > .box {
+    height: 150px;
+    border: 6px solid white;
+    display: inline-block;
+}
+
+
+/* Color */
+
+.light-pink {
+    background-color: #F5C6D6;
+}
+
+.hot-pink {
+    background-color: #EE2E84;
+}
+
+.blue {
+    background-color: #85CFD8;
+}
+
+.green {
+    background-color: #8DC63F;
+}
+
+.orange {
+    background-color: #E76E34;
+}
+
+
+/* Width */
+
+.full {
+    width: 100%;
+}
+
+.quarter {
+    width: 25%;
+}
+
+.half {
+    width: 50%;
+}
+
+.three-quarters {
+    width: 74%;
+}
+
+.remainder {
+    width: 26%;
+}
