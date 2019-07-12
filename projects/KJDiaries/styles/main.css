@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: beige;
+}
+
+/* Top Row Navbar */
+.top-row {
+    height: 130px;
+    background-color: white;
+}
+
+.top-row > div {
+    vertical-align: top;
+}
+
+.logo {
+    display: inline;
+    padding: 16px 26px;
+}
+
+.nav-item {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-left: 55px;
+}
+
+.search > input {
+    margin-left: 76px;
+    font-size: 15px;
+    font-style: italic;
+    padding-left: 10px;
+    width: 115px;
+    height: 31px;
+    border: 1px solid rgb(231, 231, 231);
+}
+
+
+/* Slide Show */
+
+.slide-show {
+    background-color: rgb(167, 167, 167);
+    height: 548px;
+    font-size: 88px;
+    text-align: center;
+
+}
+
+.email-bar{
+    background-color: rgb(226, 190, 169);
+    height: 70px;
+    font-size: 48px;
+    text-align: center;
+
+}
