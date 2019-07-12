@@ -51,3 +51,13 @@ function mostLetter(str){
 
 // console.log(mostLetter("supercalifragalisticexxpialodoshus"))
 
+
+function quadratic(a,b,c){
+    let sqrt = Math.sqrt((b*b)-(4*a*c))
+    let plus = ((b*-1)+sqrt)/(2*a)
+    let minus = ((b*-1)-sqrt)/(2*a)
+
+    return [plus,minus]
+}
+
+// console.log(quadratic(2,-4,-3))
