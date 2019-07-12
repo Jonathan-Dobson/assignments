@@ -60,4 +60,5 @@ function quadratic(a,b,c){
     return [plus,minus]
 }
 
-// console.log(quadratic(2,-4,-3))
+console.log(quadratic(2,-4,-3))
+
