@@ -1,0 +1,77 @@
+
+:root {
+    --darkbrown: #794636;
+    --deepblue: #076DB0;
+    --lightblue: #94C0E3;
+    --green: #778D01;
+    --tan: #F29966;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('./font/OpenSans-Regular.ttf')
+}
+
+* {
+    font-family: OpenSans;
+    margin: 0;
+}
+body{
+    background-color: var(--green);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--darkbrown);
+}
+
+.feed-container {
+    /* background-color: var(--green); */
+    text-align: center;
+    /* height: 900px; */
+}
+
+.feed {
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    background-color: var(--lightblue);
+    width: 600px;
+}
+
+.post{
+    background-color: var(--deepblue);
+    margin: 25px 10px 25px 10px;
+    border: 1px solid var(--darkbrown);
+    padding: 10px;
+}
+
+.post-title{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bolder;
+    color: var(--tan);
+}
+
+.post-body{
+    text-align: justify;
+    color: white;
+    padding: 15px;
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
+.post-published{
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.post-img{
+    width: 130px;
+    float: left;
+    margin-right: 20px
+}
