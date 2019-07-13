@@ -27,11 +27,11 @@
 
 
 
-// function findMiddleIndex(str){
-//     return Math.floor(str.length / 2)
-// }
+function findMiddleIndex(str){
+    return parseInt(str.length / 2)
+}
 
-// console.log(findMiddleIndex("hello"))
+console.log(findMiddleIndex("hello"))
 
 
 
@@ -59,11 +59,11 @@
 
 
 
-function returnFirstHalf(s){
-    let h = s.length/2
-    return s.slice(0,h).toUpperCase() + s.slice(h).toLowerCase()
-}
+// function returnFirstHalf(s){
+//     let h = s.length/2
+//     return s.slice(0,h).toUpperCase() + s.slice(h).toLowerCase()
+// }
 
 
-console.log(returnFirstHalf("Hello")) 
-console.log(returnFirstHalf("Hello World")) // => "Hello"
+// console.log(returnFirstHalf("Hello")) 
+// console.log(returnFirstHalf("Hello World")) // => "Hello"

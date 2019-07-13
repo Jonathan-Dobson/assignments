@@ -1,7 +1,7 @@
 function sum(num1, num2){
     return num1 + num2
 }
-// console.log(sum(5,2))
+console.log(sum(5,2))
 
 function largest(n1,n2,n3){
     return Math.max(n1,n2,n3)
@@ -35,11 +35,11 @@ function fibSum(n){
     console.log(`The sum is ${sum}.`)
 }
 
-// fibSum(1)
-// fibSum(2)
-// fibSum(3)
-// fibSum(4)
-// fibSum(6)
+fibSum(1)
+fibSum(2)
+fibSum(3)
+fibSum(4)
+fibSum(6)
 
 
 function mostLetter(str){
