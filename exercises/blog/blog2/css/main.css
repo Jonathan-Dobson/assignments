@@ -26,12 +26,22 @@ body{
     width: 100%;
     height: 50px;
     background-color: var(--darkbrown);
+    text-align: right;
+}
+.navbar li{
+    display: inline-block;
+    padding: 18px 30px 16px 30px;
+    text-transform: uppercase;
+    color: var(--tan);
+    cursor: pointer;
+}
+.navbar li:hover{
+    background-color: var(--deepblue);
+    font-weight: bolder;
 }
 
 .feed-container {
-    /* background-color: var(--green); */
     text-align: center;
-    /* height: 900px; */
 }
 
 .feed {
