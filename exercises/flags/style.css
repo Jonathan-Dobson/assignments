@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+body{
+    text-align: center;
+    background-color: #252526;
+}
+img {
+    filter: opacity(20%);
+}
+
+.flag{
+    margin: 20px;
+}
+
+
+

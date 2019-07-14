@@ -1,0 +1,23 @@
+.switzerland {
+    display: inline-block;
+    width: 580px;
+    height: 580px;
+    text-align: center;
+    background-color: #FE0900;
+}
+.ch1{
+    background-color: white;
+    position: relative;
+    top: 20%;
+    left: 41%;
+    width: 18%;
+    height: 60%;
+}
+.ch2{
+    background-color: white;
+    position: relative;
+    top: -19%;
+    left: 20%;
+    width: 60%;
+    height: 18%;
+}

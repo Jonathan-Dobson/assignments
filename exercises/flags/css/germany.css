@@ -1,0 +1,19 @@
+.germany {
+    display: inline-block;
+    width: 580px;
+    height: 387px;
+    text-align: center;
+}
+.de1{
+    background-color: #000000;
+    height: 33.3%;
+}
+
+.de2{
+    background-color: #DB0800;
+    height: 33.3%;
+}
+.de3{
+    background-color: #FFCD00;
+    height: 33.3%;
+}
