@@ -17,7 +17,8 @@
     margin: 0;
 }
 body{
-    background-color: var(--green);
+    /* background-color: var(--green); */
+    background-image: linear-gradient(var(--lightblue), var(--green));
 }
 .fixedbar{
     position: fixed;
@@ -28,11 +29,12 @@ body{
     width: 100%;
     background-color: var(--darkbrown);
     text-align: right;
+    border-bottom: 3px solid var(--green);
 }
 
 .navbar li{
     display: inline-block;
-    padding: 18px 30px 16px 30px;
+    padding: 18px 30px 16px 10px;
     text-transform: uppercase;
     color: var(--tan);
     cursor: pointer;
@@ -43,11 +45,55 @@ body{
 }
 
 .feed-container {
+    margin: 0px;
     text-align: center;
+    overflow: hidden;
 }
 .feed{
     background-color: var(--lightblue);
-    padding: 10px;
+    padding: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.post{
+    background-color: var(--deepblue);
+    border: 1px solid var(--darkbrown);
+    padding: 11px;
+    margin: 30px 8px 30px 8px;
+}
+
+.post-title{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bolder;
+    color: var(--tan);
+    text-shadow: -3px 0 var(--darkbrown), 0 1px var(--darkbrown), 1px 0 var(--darkbrown), 0 -1px var(--darkbrown);
+}
+
+.post-body{
+    text-align: justify;
+    color: white;
+    padding: 1px;
+    margin: 10px;
+    font-size: 0.9em;
+    line-height: 1.8em;
+}
+
+.post-published{
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+
+.post-img{
+    width: 140px;
+    float: left;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 @media screen and (min-width: 780px) {
@@ -57,41 +103,12 @@ body{
         top: 60px;
         background-color: var(--lightblue);
         width: 700px;
+        margin-bottom: 100px;
     }
-
-}
-
-
-.post{
-    background-color: var(--deepblue);
-    margin: 25px 10px 25px 10px;
-    border: 1px solid var(--darkbrown);
-    padding: 10px;
-}
-
-.post-title{
-    text-transform: uppercase;
-    font-size: 2em;
-    font-weight: bolder;
-    color: var(--tan);
-}
-
-.post-body{
-    text-align: justify;
-    color: white;
-    padding: 15px;
-    font-size: 1.1em;
-    line-height: 2em;
-}
-
-.post-published{
-    color: white;
-    text-transform: uppercase;
-    font-size: 0.9em;
-}
-
-.post-img{
-    width: 130px;
-    float: left;
-    margin-right: 20px
+    .mobilenav {
+        display: none;
+    }
+    .post-body{
+        font-size: 1.3em;
+    }
 }
