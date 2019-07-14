@@ -1,19 +1,19 @@
 .germany {
-    display: inline-block;
     width: 580px;
     height: 387px;
     text-align: center;
+    vertical-align: top;
+    background-color: #FFCD00;
 }
-.de1{
-    background-color: #000000;
+
+.germany>div {
     height: 33.3%;
 }
 
-.de2{
-    background-color: #DB0800;
-    height: 33.3%;
+.de1 {
+    background-color: #000000;
 }
-.de3{
-    background-color: #FFCD00;
-    height: 33.3%;
+
+.de2 {
+    background-color: #DB0800;
 }

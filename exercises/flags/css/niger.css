@@ -1,25 +1,27 @@
 .niger {
-    display: inline-block;
     width: 580px;
     height: 497px;
     text-align: center;
 }
-.ne1{
+
+.ne1 {
     background-color: #DE530C;
     height: 33.3%;
 }
 
-.ne2{
+.ne2 {
     background-color: white;
     height: 33.3%;
     text-align: center;
     padding: 13px;
 }
-.ne3{
+
+.ne3 {
     background-color: #17AE2F;
     height: 33.3%;
 }
-.ne-circle{
+
+.ne-circle {
     display: inline-block;
     background-color: #DE530C;
     width: 140px;

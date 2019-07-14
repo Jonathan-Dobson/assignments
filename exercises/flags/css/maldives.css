@@ -1,24 +1,26 @@
 .maldives {
-    display: inline-block;
     background-color: #D01837;
     width: 580px;
     height: 387px;
     padding: 98px;
 }
-.mv-green{
+
+.mv-green {
     background-color: #097D3C;
     margin: auto;
     padding: 30px;
 }
-.mv-circ{
+
+.mv-circ {
     background-color: white;
     border-radius: 50%;
     width: 133px;
     height: 133px;
     margin-left: 121px;
-    
+
 }
-.mv-circ::after{
+
+.mv-circ::after {
     display: inline-block;
     content: "";
     width: 133px;

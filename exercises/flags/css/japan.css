@@ -1,15 +1,15 @@
 .japan {
-    display: inline-block;
     width: 580px;
     height: 387px;
     text-align: center;
     background-color: white;
 }
-.jp-circle{
+
+.jp-circle {
     background-color: #BA0730;
     position: relative;
     border-radius: 50%;
-    top:21%;
+    top: 21%;
     left: 31%;
     width: 226px;
     height: 226px;

@@ -1,11 +1,11 @@
 .sweden {
-    display: inline-block;
     width: 580px;
     height: 363px;
     text-align: center;
     background-color: #0C6AA6;
 }
-.se1{
+
+.se1 {
     background-color: #FECB00;
     position: relative;
     top: 0%;
@@ -13,7 +13,8 @@
     width: 12.5%;
     height: 100%;
 }
-.se2{
+
+.se2 {
     background-color: #FECB00;
     position: relative;
     top: -60%;

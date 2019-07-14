@@ -1,27 +1,22 @@
 .france {
-    display: inline-block;
     width: 580px;
     height: 387px;
     text-align: center;
-}
-.fr1{
-    display: inline-block;
-    background-color: #092794;
-    width: 33.3%;
-    height: 100%;
-}
-
-.fr2{
-    display: inline-block;
     background-color: white;
-    width: 33.3%;
-    height: 100%;
-
 }
-.fr3{
+
+.france>div {
     display: inline-block;
-    background-color: #EC2D3B;
     width: 33.3%;
     height: 100%;
+}
 
+.fr1 {
+    background-color: #092794;
+    float: left;
+}
+
+.fr2 {
+    background-color: #EC2D3B;
+    float: right;
 }

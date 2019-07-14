@@ -1,27 +1,29 @@
 .madagascar {
-    display: inline-block;
     width: 580px;
     height: 387px;
     text-align: center;
 }
-.mg-left{
+
+.mg-left {
     display: inline-block;
     background-color: #FFFFFF;
     width: 33.3%;
     height: 100%;
 }
-.mg-right{
+
+.mg-right {
     display: inline-block;
     width: 66.7%;
     height: 100%;
 }
 
-.mg-top{
+.mg-top {
     background-color: #FB4034;
     height: 50%;
-    
+
 }
-.mg-bottom{
+
+.mg-bottom {
     background-color: #097D3C;
     height: 50%;
 }
