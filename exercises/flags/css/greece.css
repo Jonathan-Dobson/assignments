@@ -1,0 +1,26 @@
+.greece {
+    display: inline-block;
+    width: 580px;
+    height: 387px;
+    text-align: center;
+}
+.gr-blue{
+    background-color: #175EAD;
+}
+.gr-white{
+    background-color: white;
+}
+.gr-stripe{
+    height: 11.1%;
+}
+.gr-corner{
+    width: 36.5%;
+    height: 100%;
+    text-align: center;
+}
+.gr-plus{
+    display: inline-block;
+    background-color: white;
+    height: 100%;
+    width: 19.5%; 
+}

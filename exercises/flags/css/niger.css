@@ -1,0 +1,28 @@
+.niger {
+    display: inline-block;
+    width: 580px;
+    height: 497px;
+    text-align: center;
+}
+.ne1{
+    background-color: #DE530C;
+    height: 33.3%;
+}
+
+.ne2{
+    background-color: white;
+    height: 33.3%;
+    text-align: center;
+    padding: 13px;
+}
+.ne3{
+    background-color: #17AE2F;
+    height: 33.3%;
+}
+.ne-circle{
+    display: inline-block;
+    background-color: #DE530C;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
