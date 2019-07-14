@@ -96,6 +96,8 @@ body{
     
 }
 
+
+
 @media screen and (min-width: 780px) {
     .feed {
         display: inline-block;
@@ -110,5 +112,33 @@ body{
     }
     .post-body{
         font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .feed {
+        width: 90%;
+        font-size: 2em;
+        margin-top: 100px;
+    }
+    .post{
+        display: inline-block;
+        width: 1000px;
+        height: 1000px;
+        overflow: auto;
+    }
+    .navbar li{
+        font-size: 4em;
+    }
+    .post-img{
+        width: 300px;
+    }
+    .post-title{
+        font-size: 1.6em;
+        background-color: var(--lightblue);
+        border: 2px solid black;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
     }
 }
