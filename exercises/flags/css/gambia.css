@@ -1,0 +1,23 @@
+.gambia {
+    display: inline-block;
+    width: 580px;
+    height: 387px;
+    text-align: center;
+}
+
+.gm1 {
+    background-color: #CC192A;
+    height: 33.3%;
+}
+
+.gm2 {
+    background-color: #15218B;
+    height: 31%;
+    border-top: 19px solid white;
+    border-bottom: 19px solid white;
+}
+
+.gm3 {
+    background-color: #3D762C;
+    height: 33.3%;
+}
