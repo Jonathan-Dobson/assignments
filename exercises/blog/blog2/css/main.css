@@ -19,15 +19,17 @@
 body{
     background-color: var(--green);
 }
-
-.navbar {
+.fixedbar{
     position: fixed;
     top: 0;
+
+}
+.navbar {
     width: 100%;
-    height: 50px;
     background-color: var(--darkbrown);
     text-align: right;
 }
+
 .navbar li{
     display: inline-block;
     padding: 18px 30px 16px 30px;
@@ -35,7 +37,7 @@ body{
     color: var(--tan);
     cursor: pointer;
 }
-.navbar li:hover{
+.navbar li:hover, .active{
     background-color: var(--deepblue);
     font-weight: bolder;
 }
@@ -43,14 +45,22 @@ body{
 .feed-container {
     text-align: center;
 }
-
-.feed {
-    display: inline-block;
-    position: relative;
-    top: 60px;
+.feed{
     background-color: var(--lightblue);
-    width: 600px;
+    padding: 10px;
 }
+
+@media screen and (min-width: 780px) {
+    .feed {
+        display: inline-block;
+        position: relative;
+        top: 60px;
+        background-color: var(--lightblue);
+        width: 700px;
+    }
+
+}
+
 
 .post{
     background-color: var(--deepblue);
