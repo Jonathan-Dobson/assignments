@@ -1,0 +1,115 @@
+.korea {
+    width: 580px;
+    height: 387px;
+    text-align: center;
+    background-color: white;
+    padding-top: 95px;
+}
+:root{
+    --red: #C41533;
+    --blue: #083777;
+    --black: black;
+}
+.kr-circle{
+    background-color: var(--red);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-bottom: 100px solid var(--blue);
+    transform: rotate(40deg);
+}
+.kr-circle::after{
+    content: "";
+    position: relative;
+    top: 100px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 50px solid var(--blue);
+}
+.kr-circle::before{
+    content: "";
+    position: relative;
+    top: 100px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 50px solid var(--red);
+}
+
+.kr-bar-container{
+    display: inline-block;
+    position: relative;
+    top: -71px;
+    left: 35px;
+    transform: rotate(54deg);
+}
+.kr-bar-container2{
+    display: inline-block;
+    position: relative;
+    top: -42px;
+    left: 205px;
+    transform: rotate(126deg);
+}
+.kr-bar-container3{
+    display: inline-block;
+    position: relative;
+    top: -252px;
+    left: 91px;
+    transform: rotate(55deg);
+}
+.kr-bar-container4{
+    display: inline-block;
+    position: relative;
+    top: -237px;
+    left: -328px;
+    transform: rotate(122deg);
+}
+.kr-bar{
+    width: 97px;
+    height: 64px;
+    /* background-color: black; */
+    /* border-top: 16px solid var(--black);
+    border-bottom: 16px solid var(--black); */
+    margin: 10px;
+}
+.kr-bar-center{
+    width: 100%;
+    height: 16px;
+    background-color: var(--black);
+    margin-top: 9px;
+    text-align: center;
+
+}
+.kr-bar-spacer{
+    display: inline-block;
+    height:120%;
+    width: 7px;
+    background-color: white;
+    margin: -1px;
+}
+
+/* .kr-bar-container{
+    width: 97px;
+    
+}
+.kr-bar-full{
+    height: 16px;
+    background-color: black;
+    margin: 10px;
+}
+.kr-bar-half{
+    display: inline-block;
+    /* height: 16px; */
+    background-color: black;
+    margin: 10px;
+} */
+
+/* position: relative;
+top: -445px;
+left: 53px; */
+/* border: 8px solid black; */
+/* transform: rotate(56deg); */

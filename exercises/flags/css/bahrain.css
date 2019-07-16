@@ -1,0 +1,16 @@
+.bahrain {
+    background-color: white;
+    width: 580px;
+    height: 350px;
+    text-align: left;
+}
+
+.bh-red{
+    background-color: white;
+    width: 430;
+    height: 20%;
+    border: 35px solid #CC192A;
+    border-right: 90px solid white;
+    transform: rotate(180deg);
+    margin-left: 150px;
+}

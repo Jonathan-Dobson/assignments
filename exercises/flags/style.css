@@ -4,11 +4,16 @@
 }
 
 body {
+    background-color: #3e3e4d;
     text-align: center;
-    background-color: #252526;
 }
 
 .flag {
-    --spacing: 180px;
+    --spacing: 80px;
     margin: var(--spacing) auto var(--spacing) auto;
+}
+h1{
+    font-size: 30px;
+    color: white;
+    margin-bottom: -60px;
 }

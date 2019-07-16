@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+h1{
+    display: inline-block;
+    background-color: aquamarine;
+}
+
+h1:nth-child(1){
+    /* padding: 50px; */
+    vertical-align: top;
+    /* padding-bottom: 100px; */
+}
+h1:nth-child(2){
+    /* padding: 50px; */
+    vertical-align: top;
+    /* padding-bottom: 100px; */
+}
+h1:nth-last-child(2){
+    margin: 40px;
+}
