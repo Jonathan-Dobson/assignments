@@ -1,24 +1,30 @@
 .switzerland {
-    width: 580px;
-    height: 580px;
+    width: 480px;
+    height: 480px;
     text-align: center;
-    background-color: #FE0900;
+    background-color: var(--cr-background);
+}
+:root{
+    --cr-background: #FE0900;
+    --cr-size: 90px;
+    --cr-thickness: 18%;
+}
+.ch-cross{
+    display: inline-block;
+    background-color: white;
 }
 
-.ch1 {
-    background-color: white;
-    position: relative;
-    top: 20%;
-    left: 41%;
-    width: 18%;
-    height: 60%;
+.ch-cross1 {
+    width: var(--cr-thickness);
+    height: 100%;
+    border-bottom: var(--cr-size) solid var(--cr-background);
+    border-top: var(--cr-size) solid var(--cr-background);
 }
-
-.ch2 {
-    background-color: white;
+.ch-cross2{
     position: relative;
-    top: -19%;
-    left: 20%;
-    width: 60%;
-    height: 18%;
+    top: calc(-50% - var(--cr-thickness) / 2);
+    width: 100%;
+    height: var(--cr-thickness);
+    border-right: var(--cr-size) solid var(--cr-background);
+    border-left: var(--cr-size) solid var(--cr-background);
 }

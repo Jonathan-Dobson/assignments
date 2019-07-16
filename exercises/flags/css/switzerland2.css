@@ -1,0 +1,25 @@
+:root{
+    --cr-background: #FE0900;
+    --cr-size: 80px;
+    --cr-thickness: 80px;
+}
+.switzerland2 {
+    width: 480px;
+    height: 480px;
+    background-color: var(--cr-background);
+    border: var(--cr-size) solid var(--cr-background);
+}
+.switzerland2 div{
+    display: inline-block;
+    background-color: white;
+}
+.ch2-vert {
+    width: var(--cr-thickness);
+    height: 100%;
+}
+.ch2-horiz {
+    position: relative;
+    top: calc(-50% - var(--cr-thickness) / 2);
+    width: 100%;
+    height: var(--cr-thickness);
+}

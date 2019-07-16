@@ -1,0 +1,38 @@
+:root{
+    --to2-background: #BF0700;
+    --to2-size: 16px;
+    --to2-thickness: 35px;
+    --back-size: 145px;
+}
+.tonga2{
+    width: 580px;
+    height: 290px;
+    background-color: var(--to2-background);
+}
+.to2-container{
+    width: 42%;
+    height: var(--back-size);
+    text-align: center;
+    background-color: white;
+}
+.to2-corner {
+    display: inline-block;
+    width: var(--back-size);
+    height: var(--back-size);
+    background-color: rgb(255, 255, 255);
+    border: var(--to2-size) solid white;
+}
+.to2-corner div{
+    display: inline-block;
+    background-color: var(--to2-background);
+}
+.to2-vert {
+    width: var(--to2-thickness);
+    height: 100%;
+}
+.to2-horiz {
+    position: relative;
+    top: calc(-50% - var(--to2-thickness) / 2);
+    width: 100%;
+    height: var(--to2-thickness);
+}
