@@ -5,111 +5,90 @@
     background-color: white;
     padding-top: 95px;
 }
-:root{
+
+:root {
     --red: #C41533;
     --blue: #083777;
     --black: black;
 }
-.kr-circle{
+
+.kr-circle {
     background-color: var(--red);
     border-radius: 50%;
     width: 200px;
     height: 200px;
     margin: auto;
     border-bottom: 100px solid var(--blue);
-    transform: rotate(40deg);
+    transform: scale(.96) rotate(35deg);
 }
-.kr-circle::after{
+
+.kr-circle::after,
+.kr-circle::before {
     content: "";
     position: relative;
     top: 100px;
-    left: 0px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
+}
+
+.kr-circle::after {
     border: 50px solid var(--blue);
 }
-.kr-circle::before{
-    content: "";
-    position: relative;
-    top: 100px;
+
+.kr-circle::before {
     left: 0px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
     border: 50px solid var(--red);
 }
 
-.kr-bar-container{
+.kr-bar-container {
     display: inline-block;
     position: relative;
+}
+
+.kr-bar1 {
     top: -71px;
-    left: 35px;
-    transform: rotate(54deg);
+    left: 19px;
+    transform: rotate(56deg);
 }
-.kr-bar-container2{
-    display: inline-block;
-    position: relative;
-    top: -42px;
-    left: 205px;
-    transform: rotate(126deg);
+
+.kr-bar2 {
+    top: -47px;
+    left: 203px;
+    transform: rotate(124deg);
 }
-.kr-bar-container3{
-    display: inline-block;
-    position: relative;
-    top: -252px;
-    left: 91px;
-    transform: rotate(55deg);
+
+.kr-bar3 {
+    top: -244px;
+    left: 92px;
+    transform: rotate(56deg);
 }
-.kr-bar-container4{
-    display: inline-block;
-    position: relative;
-    top: -237px;
-    left: -328px;
-    transform: rotate(122deg);
+
+.kr-bar4 {
+    top: -238px;
+    left: -313px;
+    transform: rotate(124deg);
 }
-.kr-bar{
+
+.kr-bar {
     width: 97px;
     height: 64px;
-    /* background-color: black; */
-    /* border-top: 16px solid var(--black);
-    border-bottom: 16px solid var(--black); */
-    margin: 10px;
+    margin: 7px;
 }
-.kr-bar-center{
+
+.kr-bar-center {
     width: 100%;
     height: 16px;
     background-color: var(--black);
-    margin-top: 9px;
+    margin-top: 8px;
     text-align: center;
 
 }
-.kr-bar-spacer{
+
+.kr-bar-spacer {
     display: inline-block;
-    height:120%;
+    height: 120%;
     width: 7px;
     background-color: white;
     margin: -1px;
 }
-
-/* .kr-bar-container{
-    width: 97px;
-    
-}
-.kr-bar-full{
-    height: 16px;
-    background-color: black;
-    margin: 10px;
-}
-.kr-bar-half{
-    display: inline-block;
-    /* height: 16px; */
-    background-color: black;
-    margin: 10px;
-} */
-
-/* position: relative;
-top: -445px;
-left: 53px; */
-/* border: 8px solid black; */
-/* transform: rotate(56deg); */
