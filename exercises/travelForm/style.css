@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+:root{
+    --c1: #B39F79;
+    --c2: #FFF4E0;
+    --c3: #FFEBC7;
+    --c4: #6889B3;
+    --c5: #C7E0FF;
+}
+.block {
+    display: block;
+    width: 100%;
+    margin: 8px;
+}
+form{
+    background-color: var(--c5);
+    width: 100%;
+    margin: auto;
+    border: 2px solid var(--c4);
+}
+form div{
+    margin: auto;
+    width: 70%;
+    text-align: center;
+}
+input{
+    border: 2px solid var(--c2);
+    border-radius: 5px;
+    padding: 3px;
+    background-color: transparent;
+    margin: 5px;
+    text-align: center;
+}
+input:focus{
+    border: 2px solid var(--c1);
+    outline-style: none;
+    background-color: transparent;
+    
+}
+.group-name{
+    font-size: 1.2em;
+    color: var(--c4)
+}
+.diet{
+    text-align: left;
+    margin: auto;
+}
+.diet>*{
+    display: inline-block;
+    text-align: left;
+}
+
+.modal-container{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.modal-darken{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--c4);
+    filter: opacity(0.8);
+    width: 100%;
+    height: 100%;
+}
+.modal-message{
+    background-color: var(--c2);
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 9% auto;
+    height: 50%;
+    width: 70%;
+}

@@ -1,24 +1,4 @@
-let themeBlueBrown = {
-    left: {
-        bg: 'burlywood',
-        font: 'black'
-    },
-    right: {
-        bg: 'lightblue',
-        font: 'black'
-    }
-}
 
-let themeRedBlack = {
-    left: {
-        bg: 'black',
-        font: 'white'
-    },
-    right: {
-        bg: '#FF7870',
-        font: 'white'
-    }
-}
 let themeStyles = themeBlueBrown
 
 // CLEAR MESSAGES
@@ -59,30 +39,39 @@ clearButton.addEventListener('click',e=>{
 //     message.style.backgroundColor = themeStyles.left.bg
 
 // }
-
-// let themeDropDown = document.getElementById('theme-drop-down')
 // let rightMessages = document.getElementsByClassName('message right')
 // let leftMessages = document.getElementsByClassName('message left')
 
 
-// themeDropDown.addEventListener('change', e=>{
-//     if(e.target.value==="theme-two"){
-//         themeStyles = themeRedBlack
-//     }
-//     if(e.target.value==="theme-one"){
-//         themeStyles = themeBlueBrown
-//     }
-//     reStyleAll()
-// })
+// THEME CHANGE EVENT
+
+let themeDropDown = document.getElementById('theme-drop-down')
+themeDropDown.addEventListener('change', e=>{
+    if(e.target.value==="theme-two"){
+        themeStyles = themeRedBlack
+    }
+    if(e.target.value==="theme-one"){
+        themeStyles = themeBlueBrown
+    }
+    reStyleAll()
+})
+
+// NEW MESSAGE COMPONENT
+
+function createMessage(text){
+    newMessage = document.createElement('div')
+    newMessage.textContent = text
+
+    return newMessage
+}
+
+
 
 
 let sendButton = document.getElementsByTagName('form')
 sendButton[0][1].addEventListener('click',e=>{
     e.preventDefault()
-    newMessage = document.createElement('div')
-    newMessage.textContent = sendButton[0][0].value
-
-    console.log(messageBox[0])
+    newMessage = createMessage(sendButton[0][0].value)
     messageLength = messages[0].children.length
     newMessage.className = messageLength % 2 === 0 ? "message left" : "message right"
     messageBox = document.getElementsByClassName('messages')

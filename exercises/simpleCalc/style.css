@@ -25,7 +25,7 @@ input {
 input:focus{
     border: 4px solid var(--neongreen); 
     border-radius: var(--border-radius); 
-
+    outline: none;
 }
 
 
@@ -51,9 +51,14 @@ button {
     border-radius: var(--border-radius);
     background-color: transparent;
 }
-button:active{
+button:focus{
     border: 4px solid var(--neongreen); 
     border-radius: var(--border-radius); 
+
+    outline: none;
+}
+button:active{
+    
 }
 
 .result{

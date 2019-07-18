@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Fly High Airlines</title>
+</head>
+
+<body>
+    <div class="modal-container" id="modal">
+        <div class="modal-darken"></div>
+        <div class="modal-message">
+
+
+        </div>
+    </div>
+    <div class="container">
+        <form name="travel">
+
+            <div>
+                <input class="block" type="text" name="firstName" id="fname" placeholder="First Name" autofocus autocomplete="off">
+            </div>
+            <div>
+                <input class="block" type="text" name="lastName" id="lname" placeholder="Last Name" autocomplete="off">
+            </div>
+            <div>
+                <input class="block" type="number" name="age" id="age" placeholder="Age" autocomplete="off">
+
+            </div>
+            <div class="outline">
+                <div class="group-name">
+                    
+                    Gender:
+                </div>
+                <div class="gender">
+                    <p>
+                        <input type="radio" name="gender" id="male" value="Male">
+                        Male
+                        <input type="radio" name="gender" id="female" value="Female">
+                        Female
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="group-name">
+
+                    Destination:
+                </div>
+                <select name="destination" id="">
+                    <option value="">------------------</option>
+                    <option value="Utah">Utah</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Michigan">Michigan</option>
+                    <option value="California">California</option>
+                    <option value="Texas">Texas</option>
+                </select>
+            </div>
+            <div>
+                <div class="group-name">
+                    Dietary restrictions:
+                </div>
+                <div class="diet">
+
+                    <p>
+                        <input type="checkbox" name="veg" id="">
+                        Vegetarian
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="kos" id="">
+                        Kosher
+                    </p>
+                    <p>
+                        <input type="checkbox" name="lac" id="">
+                        Lactose Free
+                    </p>
+                </div>
+            </div>
+            <div>
+                <button class="block" type="submit">Submit</button>
+
+            </div>
+
+
+
+
+
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
