@@ -24,7 +24,7 @@ function updateTotal(update){
         item2.className = "baddie-container"
     }
     let item3 = document.getElementById('item3')
-    if(forms.bombomb.value==0 | forms.bombomb.value==""){
+    if(forms.bombomb.value==0 || forms.bombomb.value==""){
         item3.className = item3.className + " noprint"
     }
     else{
@@ -48,6 +48,8 @@ baddies.addEventListener('change',e=>{
     let bombomb = forms.bombomb.value * 11
     updateTotal(goomba+cheepcheep+bombomb)
 })
+
+
 box1.addEventListener('click',e=>{
     let b1 = box1.getElementsByTagName('input')[0]
     b1.focus()
@@ -60,3 +62,5 @@ box3.addEventListener('click',e=>{
     let b3 = box3.getElementsByTagName('input')[0]
     b3.focus()
 })
+
+

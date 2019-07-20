@@ -1,0 +1,77 @@
+@font-face{
+    font-family: FiraSans;
+    src: url(./font/FiraSans-Regular.ttf)
+}
+@font-face{
+    font-family: Libre;
+    src: url(./font/LibreBaskerville-Regular.ttf)
+}
+@font-face{
+    font-family: Raleway;
+    src: url(./font/Raleway-Regular.ttf)
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    margin: 0;
+    color: var(--green);
+
+}
+
+:root{
+    --height: 5000px;
+    --darkblue: #0477BF;
+    --lightblue: #96BFD9;
+    --skyblue: #049DD9;
+    --peach: #F2AD94;
+    --green: #173628;
+
+}
+
+body{
+    background-color: black;
+}
+
+#background {
+    height: 200vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: -10;
+}
+#content-container{
+    width: 95%;
+    height: var(--height); 
+    margin: 10px auto;
+}
+
+.blue-box{
+    margin-bottom: 80px;
+    line-height: 30px;
+    color: white;
+}
+.blue-tab{
+    box-shadow: 0 -4px 15px var(--green);
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-top: 1px solid black;
+    text-align: center;
+    border-bottom: none;
+    color: white;
+    text-shadow: 4px 4px 4px var(--green);
+    font-size: 1.5em;
+    padding: 12px;
+}
+
+.blue-body{
+    font-size: 0.8em;
+    border-top: none;
+    text-align: center;
+    color: white;
+    padding: 12px;
+}
+
+
+
+
