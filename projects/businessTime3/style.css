@@ -7,51 +7,51 @@ body>div {
 
 /* ITEM ONE */
 .one {
-    background-image: linear-gradient(
-        rgba(187, 237, 242, 0.3), rgba(0, 66, 73, 0.5)), 
-        url(./img/baked-cake-donut-7000185-1217_horiz.jpg);
+    background-image: linear-gradient(rgba(187, 237, 242, 0.3), rgba(0, 66, 73, 0.5)),
+        url(./images/baked-cake-donut-7000185-1217_horiz.jpg);
     font-family: Donut;
     color: rgb(274, 191, 187, 1);
     text-shadow: 3px 3px 7px rgb(116, 97, 114);
 }
 
-    .one h1 {
-        margin-top: 200px;
-    }
+.one h1 {
+    margin-top: 200px;
+}
 
 
 /* ITEM TWO */
-    .two h1 {
-        margin-top: 20px;
-    }
+.two h1 {
+    margin-top: 20px;
+}
 
-    .two p {
-        font-size: 1.2em;
-    }
+.two p {
+    font-size: 1.2em;
+}
 
 
 /* ITEM THREE */
 .three {
-    background-image: url(./img/dr\ ds\ delicious\ doughnut\ delights.jpeg);
+    background-image: url(./images/dr\ ds\ delicious\ doughnut\ delights.jpeg);
 }
 
 
 /* ITEM FOUR */
-    .four h1 {
-        margin-top: 20px;
-    }
-    .four p {
-        font-size: 1.2em;
-    }   
+.four h1 {
+    margin-top: 20px;
+}
+
+.four p {
+    font-size: 1.2em;
+}
 
 
 
 .five {
-    background-image: url(./img/Baked-Vanilla-Donuts-14.jpg);
+    background-image: url(./images/Baked-Vanilla-Donuts-14.jpg);
 }
 
 .seven {
-    background-image: url(./img/Destination+Donuts.jpeg);
+    background-image: url(./images/Destination+Donuts.jpeg);
 }
 
 .nine {
@@ -95,6 +95,7 @@ img {
 .pink {
     color: rgba(227, 162, 186, 1);
 }
+
 .white {
     color: white;
 }
