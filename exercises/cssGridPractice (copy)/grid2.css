@@ -1,0 +1,99 @@
+div{
+    border: 12px solid white;
+    border-radius: 22px;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+/* MOBILE */
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 2em;
+}
+.header {
+    background-color: #ED0104; 
+    animation: redbot 0.7s ease-in-out 0.5s 1;
+    position: relative;
+}
+.sidebar{
+    background-color: #3B00FF;
+    animation: bluetop 0.5s ease-in-out 0.3s 1;
+}
+.content{
+    background-color: green;
+    animation: example 0.5s ease-in-out 1;
+}
+.sidebar2{
+    background-color: orangered;
+}
+.footer{
+    background-color: #800080;
+}
+@keyframes example {
+    0% {
+        position: relative;
+        left: -1170px;
+
+    }
+    
+    100% {
+        position: relative;
+        left: 0px;
+    }
+}
+@keyframes bluetop {
+    0%{
+        position: relative;
+        top: -800px;
+    }
+    100%{
+        position: relative;
+        top: 0px;
+    }
+}
+@keyframes redbot {
+    0%{
+        position: relative;
+        top: 2800px;
+    }
+    100%{
+        position: relative;
+        top: 0px;
+    }
+}
+/* TABLET */
+@media screen and (min-width: 768px){
+    body{
+        grid-template-columns: 1fr 3fr;
+    }
+    .header, .sidebar2, .footer{
+        grid-column: 1/4;
+    }
+    .sidebar{
+        grid-column: 1/2;
+    }
+    .content{
+        grid-column: 2/3;
+    }
+}
+
+/* LAPTOP */
+@media screen and (min-width: 1124px){
+    body{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .header, .footer{
+        grid-column: 1/4;
+    }
+    .sidebar{
+        grid-column: 1/2;
+    }
+    .content{
+        grid-column: 2/3;
+    }
+    .sidebar2{
+        grid-column: 3/4;
+    }
+}

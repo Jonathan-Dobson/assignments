@@ -1,0 +1,98 @@
+:root{
+    --coffee-1: #BF7A63;
+    --coffee-2: #805242;
+    --coffee-3: #FFA485;
+    --coffee-4: #402921;
+    --coffee-5: #E69377;
+    --white: #edc;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+header, footer{
+    background-color: var(--coffee-4);
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+
+}
+.nav, .logo{
+    padding: 30px 0 0 0;
+    width: 100%;
+}
+.logo{
+    padding-left: 30px;
+}
+.nav > div{
+    color: var(--white);
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 22px 25px;
+    border-top: 1px solid black;
+
+}
+
+.nav > div:hover{
+    background-color: var(--coffee-2);
+}
+
+footer > div{
+    padding: 20px 10px;
+}
+.one, .two, .three, .four, .five, .six, .seven{
+    height: 200px;
+    background-color: transparent;
+}
+.one{
+    /* background-image: url(./img/Destination+Donuts.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+.two{
+    background-color: var(--coffee-5);
+}
+.three{
+    background-image: url(./img/blueberry-donuts.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.four{
+    background-color: var(--coffee-3);
+
+}
+.five{
+    background-image: url(./img/dr\ ds\ delicious\ doughnut\ delights.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.six{
+    background-color: var(--coffee-1);
+
+}
+.seven{
+    background-image: url(./img/Juniper+Coffee+and+Donuts.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 800px) {
+    .nav > div{
+        display: inline-block;
+        margin: 20px 0 0;
+        padding: 23px 50px 23px 50px;
+    }
+    .nav, .logo{
+        width: auto;
+    }
+    .one, .two, .three, .four, .five, .six, .seven{
+        height: 600px;
+    }
+}

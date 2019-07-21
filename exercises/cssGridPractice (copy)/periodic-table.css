@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* div{
+    border: 8px solid white;
+    border-radius: 22px;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+} */
+
+/* MOBILE */
+body{
+    /* display: grid; */
+    /* grid-template-columns: repeat(18, 1fr); */
+    vertical-align: bottom;
+}
+
+.col > div{
+    text-align: center;
+    font-size: 2em;
+    /* background-color: #2B8000; */
+    padding: 12px;
+    color: black;
+    font-weight: bold;
+    margin: 5px 1px;
+    border: 2px solid black;
+
+
+}
+.col{
+    display: inline-block;
+}
+
+.bl{
+    background-color: #BEFFFF;
+}
+.yl{
+    background-color: #EFFF8E;
+}
+.rd{
+    background-color: #FF6565;
+}

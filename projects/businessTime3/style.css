@@ -1,0 +1,131 @@
+/* ITEMS ALL */
+body>div {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+
+/* ITEM ONE */
+.one {
+    background-image: linear-gradient(
+        rgba(187, 237, 242, 0.3), rgba(0, 66, 73, 0.5)), 
+        url(./img/baked-cake-donut-7000185-1217_horiz.jpg);
+    font-family: Donut;
+    color: rgb(274, 191, 187, 1);
+    text-shadow: 3px 3px 7px rgb(116, 97, 114);
+}
+
+    .one h1 {
+        margin-top: 200px;
+    }
+
+
+/* ITEM TWO */
+    .two h1 {
+        margin-top: 20px;
+    }
+
+    .two p {
+        font-size: 1.2em;
+    }
+
+
+/* ITEM THREE */
+.three {
+    background-image: url(./img/dr\ ds\ delicious\ doughnut\ delights.jpeg);
+}
+
+
+/* ITEM FOUR */
+    .four h1 {
+        margin-top: 20px;
+    }
+    .four p {
+        font-size: 1.2em;
+    }   
+
+
+
+.five {
+    background-image: url(./img/Baked-Vanilla-Donuts-14.jpg);
+}
+
+.seven {
+    background-image: url(./img/Destination+Donuts.jpeg);
+}
+
+.nine {
+    background-color: rgb(3, 127, 140, 1);
+}
+
+
+/* FULL WIDTH BACKGROUND IMAGE */
+.full-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* CONTENT IMAGES */
+img {
+    border: 6px solid rgba(217, 181, 4, 1);
+}
+
+* {
+    margin: 0;
+}
+
+/* FONT COLORS */
+.red {
+    color: rgba(217, 4, 61, 1);
+}
+
+.blue {
+    color: rgba(3, 127, 140, 1);
+}
+
+.babyblue {
+    color: rgba(187, 237, 242, 1);
+}
+
+.yellow {
+    color: rgba(217, 181, 4, 1);
+    text-shadow: 3px 3px 20px rgb(217, 181, 4, 1)
+}
+
+.pink {
+    color: rgba(227, 162, 186, 1);
+}
+.white {
+    color: white;
+}
+
+
+/* FONT STYLES */
+@font-face {
+    font-family: Donut;
+    src: url(./font/Righteous-Regular.ttf);
+}
+
+.donut-font {
+    font-family: Donut;
+}
+
+@font-face {
+    font-family: Script;
+    src: url(./font/BadScript-Regular.ttf);
+}
+
+.script-font {
+    font-family: Script;
+    /* text-shadow: 3px 3px 7px rgb(116, 97, 114);
+    text-align: center; */
+}
+
+
+/* CSS GRID CONTAINER */
+body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 350px 350px 350px 350px 350px 350px 350px 80px 350px;
+    color: grey;
+}
