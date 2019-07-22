@@ -16,6 +16,7 @@ body>div {
 
 /* NAV BUTTONS */
 a{
+    
     text-decoration: none;
     color: rgb(3, 127, 140, 1);
     background-color: rgba(187, 237, 242, 1);
@@ -38,16 +39,12 @@ p {
 
 
 /* INPUT FIELD */
-form{
-    grid-column: 1 / -1;
 
-}
 
 input, textarea{
-    widows: 100%;
-    font-size: 1.8em;
-    padding: 20px;
-    margin: 20px;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px;
 }
 
 /* ITEM ONE */
@@ -194,11 +191,15 @@ img {
     .contact{
         grid-column: 4 / 7;
         padding: 15px;
+        position: sticky;
+        top: 0px;
     }
 
     .products{
         grid-column: 1 / 4;
         padding: 15px;
+        position: sticky;
+        top: 0px;
     }
     .article{
         grid-column: 2 / 6;
@@ -218,6 +219,8 @@ img {
         grid-column: 2 / 6;
         padding: 15px;
         margin: 20px;
+        position: sticky;
+        top: 0px;
     }
 }
 

@@ -1,0 +1,14 @@
+
+.card{
+    display: inline-block;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid salmon;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+}
+a{
+    font-size: 1.1em;
+    padding: 9px;
+}
+
