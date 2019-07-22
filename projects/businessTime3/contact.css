@@ -1,8 +1,16 @@
+
+*{
+    margin: 0;
+}
+p {
+    margin: 9px;
+}
+
 /* CSS GRID CONTAINER */
 body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 350px auto auto repeat(8,350px);
+    grid-template-rows: 250px repeat(6,250px);
     color: grey;
     grid-gap: 3px;
 }
@@ -12,7 +20,6 @@ body>div {
     grid-column: 1 / -1;
     text-align: center;
 }
-
 
 /* NAV BUTTONS */
 a{
@@ -28,29 +35,10 @@ a{
 
 a:hover{
     background-color: rgb(186, 245, 250);
+    font-size: 1.4em;
     color: rgb(2, 94, 104);    
 }
 
-
-p {
-    margin: 9px;
-}
-
-
-/* INPUT FIELD */
-form{
-    grid-column: 1 / -1;
-
-}
-
-input, textarea{
-    widows: 100%;
-    font-size: 1.8em;
-    padding: 20px;
-    margin: 20px;
-}
-
-/* ITEM ONE */
 .one {
     background-image: linear-gradient(rgba(187, 237, 242, 0.3), rgba(0, 66, 73, 0.9)),
     url(./images/baked-cake-donut-7000185-1217_horiz.jpg);
@@ -58,112 +46,14 @@ input, textarea{
     color: rgb(274, 191, 187, 1);
     text-shadow: 3px 3px 7px rgb(116, 97, 114);
 }
-
 .one h1 {
     margin-top: 200px;
-}
-
-/* ITEM THREE */
-.three {
-    background-image: url(./images/dr\ ds\ delicious\ doughnut\ delights.jpeg);
-}
-
-
-/* ITEM FOUR */
-.four img{
-    float: right;
-    width: 100px;
-    margin: 12px;
-}
-
-
-/* ITEM FIVE */
-.five {
-    background-image: url(./images/Baked-Vanilla-Donuts-14.jpg);
-}
-
-
-/* ITEM SIX */
-.six p {
-    margin-top: 20px;
-}
-.six img{
-    float: left;
-    width: 100px;
-    margin: 20px 12px;
-}
-
-
-/* ITEM SEVEN */
-.seven {
-    background-image: url(./images/Destination+Donuts.jpeg);
-}
-
-/* ITEM NINE - FOOTER */
-.nine {
-    background-image: none;
-    background-color: rgb(3, 127, 140, 1);
-    padding: 15px;
-}
-
-.nine h3 {
-    color: pink;
-}
-
-
-/* ALL TEXT CONTENT */
-.article h1 {
-    margin-top: 20px;
-}
-
-.article p {
-    font-size: 1.2em;
-}
-
-
-/* ALL FULL WIDTH BACKGROUND IMAGES */
-.full-img {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-/* CONTENT IMAGES */
-img {
-    border: 6px solid rgba(217, 181, 4, 1);
-}
-
-* {
-    margin: 0;
-}
-
-/* FONT COLORS */
-.red {
-    color: rgba(217, 4, 61, 1);
-}
-
-.blue {
-    color: rgba(3, 127, 140, 1);
-}
-
-.babyblue {
-    color: rgba(187, 237, 242, 1);
 }
 
 .yellow {
     color: rgba(217, 181, 4, 1);
     text-shadow: 3px 3px 20px rgb(217, 181, 4, 1)
 }
-
-.pink {
-    color: rgb(274, 191, 187, 1);
-}
-
-.white {
-    color: white;
-}
-
-
 
 /* FONT STYLES */
 @font-face {
@@ -208,18 +98,4 @@ img {
         width: 160px;
         margin: 30px;
     }
-    input, textarea{
-        font-size: 1.3em;
-        padding: 20px;
-        grid-column: 2 / 6;
-        margin: 20px;
-    }
-    .send, .home{
-        grid-column: 2 / 6;
-        padding: 15px;
-        margin: 20px;
-    }
 }
-
-
-
