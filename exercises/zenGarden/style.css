@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 0; */
+}
+
+/* HERO CONTAINER */
+.hero-container{
+    display: flex;
+    height: 220px;
+    width: 100%;
+    background: #365f5f center / cover no-repeat url("./images/huntington.jpg");
+    border-top: solid 10px rgba(19, 56, 59, 0.4);
+}
+@media screen and (min-width: 500px){
+    .hero-container{
+        height: 220px;
+    }
+}
+@media screen and (min-width: 1132px){
+    .hero-container{
+        height: 300px;
+    }
+}
+
+/* HERO LEFT CONTAINER */
+.hero-left-container{
+    display: flex;
+    height: 100%;
+    width: 66%;
+
+}
+.hero-right-container{
+    display: flex;
+    width: 34%;
+    background-color: rgb(202, 223, 210);
+    filter: brightness(0.7) opacity(0.5);
+}
+
+
+/* HERO RIGHT CONTAINER */
+
+
+
+
+.one{
+    font-size: 2em;
+}

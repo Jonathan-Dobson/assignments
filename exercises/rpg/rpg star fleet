@@ -1,0 +1,189 @@
+You are the commander of the Imperial defense unit stationed at the Capital planetary system of the Galactic Empire. Rebel forces have been determined to be heading on a direct course to this system and Attack is eminent. Intelligence indicated that there are four waves of starship fleets that will be attacking. Defend our system from attack from rebellion forces. 
+
+You have command over all of our planetary defenses. Defenses include
+
+Sheild generators
+Planetary batteries
+fighter squadrons
+facility fortifications
+Imperial Capital ships
+
+
+Enter you name:
+
+Congratulations [name]. You have been appointed commander of the Imperial Dominators, the greatest starship fleet in the galaxy. 
+Do you accept the position of Commander?
+
+Welcome Aboard the capital ship, the greatest ship in our fleet.
+You are tasked with leading our fleet into the most epic battle to conquer the four remaining planetary systems in sector 2814 currently currently controlled by rebellion forces. Ok Lets do this... No way I can't...
+
+Your mission is to neutralize rebel defenses and take control of the capital region of each system. The four systems are Yabbla, Gilpa, Shikkin, and Viltin. Your fleet is currently enroute the Yabbla system. Intelligence has determined this is the system with the weakest defenses and will serve as the safest starting point to secure a base and defenses from wich you will mount your offensive to capture the remaining three systems.
+Okay Lets Go... Please Help me...
+
+view to intel on each system.
+view condition of fleet and mission
+
+Sheild generators - These are powerful defense shields that can repel even the most advanced weapons known
+Planetary batteries - Artillary cannons for launching heavy projectiles at incoming ships
+fighter squadrons - Light, fast, maneuverable, single-pilot craft for defending strategic facilities
+facility fortifications - the fortifications built into all sensitive high-value facilities
+Imperial Capital ships - Large Orbital Fortresses equipped with an array of powerful weapons, shields, fighters and more.
+Regiments - Ground based battallions consisting of infantry and other ground defense equipment
+
+
+
+
+
+
+
+
+
+
+
+
+
+8 planets to cover;
+
+player
+weapons:
+laser cannon 3
+missile power 1
+
+defense:
+Shield Power 30
+Shield Recharge Rate 30
+Armor Condition 20
+
+
+characteristics:
+tech
+evasion top maneuvers 1-10
+engine top power 1-10
+
+
+
+
+enemy ships:
+
+Turtle
+	weapons:
+	laser cannon 1
+	missile power 1 
+
+	defense:
+	Shield Power 9
+	Shield Recharge Rate 9
+	Armor Condition 9
+	
+	evasion top maneuvers 1
+	engine top power 1
+
+Gorilla
+	weapons:
+	laser cannon 1
+	missile power 2 
+
+	defense:
+	Shield Power 5
+	Shield Recharge Rate 5
+	Armor Condition 7
+	
+	evasion top maneuvers 3
+	engine top power 2
+Zebra
+	weapons:
+	laser cannon 1
+	missile power 2 
+
+	defense:
+	Shield Power 5
+	Shield Recharge Rate 7
+	Armor Condition 6
+	
+	evasion top maneuvers 8
+	engine top power 8
+
+Lion
+	weapons:
+	laser cannon 3
+	missile power 3 
+
+	defense:
+	Shield Power 5
+	Shield Recharge Rate 7
+	Armor Condition 3
+	
+	evasion top maneuvers 6
+	engine top power 6
+	
+
+strategic tech:
+laser 
+
+other 
+shield repair kit
+engine repair kit
+laser cannon repair kit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
