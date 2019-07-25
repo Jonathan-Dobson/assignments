@@ -12,12 +12,17 @@ Imperial Capital ships
 Enter you name:
 
 Congratulations [name]. You have been appointed commander of the Imperial Dominators, the greatest starship fleet in the galaxy. 
-Do you accept the position of Commander?
+Do you accept the position of Commander? YN?
 
 Welcome Aboard the capital ship, the greatest ship in our fleet.
-You are tasked with leading our fleet into the most epic battle to conquer the four remaining planetary systems in sector 2814 currently currently controlled by rebellion forces. Ok Lets do this... No way I can't...
+You are tasked with leading our fleet into the most epic battle to conquer the four remaining planetary systems in sector 2814 currently controlled by rebellion forces. Ok Lets do this... No way I can't...
 
-Your mission is to neutralize rebel defenses and take control of the capital region of each system. The four systems are Yabbla, Gilpa, Shikkin, and Viltin. Your fleet is currently enroute the Yabbla system. Intelligence has determined this is the system with the weakest defenses and will serve as the safest starting point to secure a base and defenses from wich you will mount your offensive to capture the remaining three systems.
+Your mission is to neutralize rebel defenses and take control of the capital region of each system. 
+
+The four systems are Yabbla, Gilpa, Shikkin, and Viltin. 
+Your fleet is currently enroute the Yabbla system. 
+
+Intelligence has determined this is the system with the weakest defenses and will serve as the safest starting point to secure a base and defenses from wich you will mount your offensive to capture the remaining systems.
 Okay Lets Go... Please Help me...
 
 view to intel on each system.
@@ -126,6 +131,8 @@ engine repair kit
 laser cannon repair kit
 
 
+When player is escaping (flying away)
+if enemy engines are faster than player's engines, the enemy will attack but the players counterattack rate will be half of his rated attack power
 
 
 
@@ -137,6 +144,29 @@ laser cannon repair kit
 
 
 
+On arrival:
+
+Enemy will:
+	Attack
+		E.Att +5
+		E.Def +10
+
+	Stand Ground
+		E.Att -5
+		E.Def +20
+
+	Retreat
+		E.Att -10
+		E.Def -10
+		
+
+Player will:
+	Attack
+		P.Att +5
+		P.Def -5
+	Retreat
+		P.Att -10
+		P.Def -10
 
 
 

@@ -1,0 +1,14 @@
+div{
+    background-color: black;
+    width: 400px;
+    height: 400px;
+
+    transition-property: height width background-color;
+    transition-duration: 0.2s;
+}
+
+div:hover{
+    height: 450px;
+    width: 450px;
+    background-color: burlywood;
+}
