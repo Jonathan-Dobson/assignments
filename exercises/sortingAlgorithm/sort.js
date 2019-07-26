@@ -6,28 +6,25 @@ callback = (a, b) => a - b
 
 
 Array.prototype.mySort = function (cb) {
-    let i = 0, compare, goback
-    let arr = []
-    if(!compare){
+    let i = 0,
+        compare, goback, move
+
+    if (!compare) {
         compare = this[i]
         i++
     }
 
-    while(i<this.length){
-        //check compare with i target
-        console.log([compare,this[i]])
+    while (i < this.length) {
+        console.log([compare, this[i]])
 
-        if(goback){
+        if (cb(this[i], compare) > 0) {
+            console.log('forward')
 
-        }else{
-            if(cb(this[i],compare)>0){
-                arr[i-1] = compare
-                arr[i] = this[i]
-            }else{
-                console.log('go back')
-                goback = true
-    
-            }
+            this[i - 1] = compare
+            this[i] = this[i]
+        } else {
+            console.log('go back')
+            goback = true
 
         }
 
