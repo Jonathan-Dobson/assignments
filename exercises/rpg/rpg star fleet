@@ -148,25 +148,25 @@ On arrival:
 
 Enemy will:
 	Attack
-		E.Att +5
-		E.Def +10
-
-	Stand Ground
-		E.Att -5
+		E.Att +10
 		E.Def +20
 
-	Retreat
+	Stand Ground
 		E.Att -10
-		E.Def -10
+		E.Def +40
+
+	Retreat
+		E.Att -20
+		E.Def -20
 		
 
 Player will:
 	Attack
-		P.Att +5
-		P.Def -5
-	Retreat
-		P.Att -10
+		P.Att +10
 		P.Def -10
+	Retreat
+		P.Att -20
+		P.Def -20
 
 
 

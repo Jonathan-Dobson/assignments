@@ -1,0 +1,62 @@
+{
+    "appetizers": [
+        {
+            "name": "Chips and Salsa",
+            "ingredients": ["tortilla chips", "salsa"],
+            "description": "Tortilla chips served with salsa dip"
+        },
+        {
+            "name": "cheese sticks",
+            "ingredients": ["bread crumbs", "cheese"],
+            "description": "breaded deep fried mozzerella sticks"
+        }
+    ],
+    "cold sandwiches": [
+        {
+            "name": "BLT",
+            "ingredients": ["bacon","lettuce","tomato","bread"],
+            "description": "Crunchy bacon, lettuce and ripe tomato slices on hearty toasted bread"
+        },
+        {
+            "name": "Cold Turkey",
+            "ingredients": ["turkey", "tomato", "mayo", "lettuce", "provolone"],
+            "description": "Thick sliced turkey with mayo, tomato, lettuce, and provolone"
+        }
+    ],
+    "hot sandwiches": [
+        {
+            "name": "Grilled Ham and Cheese",
+            "ingredients": ["bread","ham","cheese"],
+            "description": "A toasty cruchy creamy hot ham with melted swiss cheese"
+        },
+        {
+            "name": "Philly CheeseSteak",
+            "ingredients": ["steak","bread","onions","pepper","cheese"],
+            "description": "A peppery grilled steak and onion covered in melted swiss"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "banana split",
+            "ingredients": ["banana","vanilla ice cream"],
+            "description": "a whole bananna sliced along length set in three scoops of vanilla ice cream"
+        },
+        {
+            "name": "Pumpkin Pie",
+            "ingredients": ["pumpkin", "sugar", "cream", "spices","flour"],
+            "description": "spicy creamy sweet pie on a graham crust"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Pepsi",
+            "ingredients": ["sugar","water","phosphoric acid"],
+            "description": "A sweet carbonated cola" 
+        },
+        {
+            "name": "Budweiser",
+            "ingredients": ["water","hops","yeast"],
+            "description": "beer"
+        }
+    ]
+}
