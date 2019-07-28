@@ -1,15 +1,6 @@
 const {log} = console
 
 const data = [{
-    Title: "Mario Pest Control",
-    Description: `Build Mario a website that keeps track of how many baddies he caught for Princess Peach so he can send her a bill.`,
-    CourseLink: `https://coursework.vschool.io/mario-pest-control/`,
-    LiveDemo: `./projects/marioPestControl/index.html`,
-    keyPoints: ['HTML', 'DOM', 'JavaScript', 'Event Listeners'],
-    bgColorTop: `rgba(255, 251, 0, 0.4)`,
-    bgColorBottom: `rgba(255, 123, 0, 1)`,
-    image: `./images/mario.png`
-}, {
     Title: `"Business Time" Project`,
     Description: `Create a website for your new business that is well-styled and responsive`,
     CourseLink: `https://coursework.vschool.io/business-time/`,
@@ -28,6 +19,15 @@ const data = [{
     bgColorBottom: `rgba(119, 153, 134, 1)`,
     image: `./images/newsies.png`
 }, {
+    Title: "Mario Pest Control",
+    Description: `Build Mario a website that keeps track of how many baddies he caught for Princess Peach so he can send her a bill.`,
+    CourseLink: `https://coursework.vschool.io/mario-pest-control/`,
+    LiveDemo: `./projects/marioPestControl/index.html`,
+    keyPoints: ['HTML', 'DOM', 'JavaScript', 'Event Listeners'],
+    bgColorTop: `rgba(255, 251, 0, 0.4)`,
+    bgColorBottom: `rgba(255, 123, 0, 1)`,
+    image: `./images/mario.png`
+}, {
     Title: `Design a Blog`,
     Description: `Design a responsive Blog page with a content feed`,
     CourseLink: `http://coursework.vschool.io/design-a-blog/`,
@@ -36,17 +36,26 @@ const data = [{
     bgColorTop: `rgba(119, 153, 134, 0.3)`,
     bgColorBottom: `rgba(135, 71, 51, 1)`,
     image: `./images/blog.png`
+}, {
+    Title: `CSS Flags`,
+    Description: `Build the following flags in pure HTML and CSS, no images allowed.`,
+    CourseLink: `https://coursework.vschool.io/css-flags/`,
+    LiveDemo: `./exercises/flags/index.html`,
+    keyPoints: ['HTML', 'CSS', 'Layout', "Box Model"],
+    bgColorTop: `rgba(119, 153, 134, 0.3)`,
+    bgColorBottom: `rgba(135, 71, 51, 1)`,
+    image: `./images/flags2.png`
+}, {
+    Title: `Simple Calculator`,
+    Description: `create a simple calculator that can Add, Subtract, and Multiply`,
+    CourseLink: `https://coursework.vschool.io/simple-calculator/`,
+    LiveDemo: `./exercises/simpleCalc/index.html`,
+    keyPoints: ['HTML', 'CSS', "DOM", "Event Listeners", "Forms"],
+    bgColorTop: `rgba(119, 153, 134, 0.3)`,
+    bgColorBottom: `rgba(135, 71, 51, 1)`,
+    image: `./images/simpleCalc.png`
 } 
 ]
-
-
-
-        
-
-
-
-
-
 
 
 

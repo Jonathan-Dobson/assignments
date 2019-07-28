@@ -13,3 +13,6 @@ body{
 .card-container{
     display: inline-block;
 }
+.mdl-card__supporting-text{
+    margin: auto;
+}
