@@ -1,18 +1,49 @@
 const {log} = console
 
 const data = [{
-    cardTitle: "Mario Pest Control",
-    cardDescription: `Build Mario a website that keeps track of how many baddies he caught for Princess Peach so he can send her a bill.`,
-    cardCourseLink: `https://coursework.vschool.io/mario-pest-control/`,
-    cardLiveDemo: `./projects/marioPestControl/index.html`,
-    keyPoints: ['HTML', 'DOM', 'JavaScript', 'Event Listeners']
+    Title: "Mario Pest Control",
+    Description: `Build Mario a website that keeps track of how many baddies he caught for Princess Peach so he can send her a bill.`,
+    CourseLink: `https://coursework.vschool.io/mario-pest-control/`,
+    LiveDemo: `./projects/marioPestControl/index.html`,
+    keyPoints: ['HTML', 'DOM', 'JavaScript', 'Event Listeners'],
+    bgColorTop: `rgba(255, 251, 0, 0.4)`,
+    bgColorBottom: `rgba(255, 123, 0, 1)`,
+    image: `./images/mario.png`
 }, {
-    cardTitle: "Mario Pest Control",
-    cardDescription: `Build Mario a website that keeps track of how many baddies he caught for Princess Peach so he can send her a bill.`,
-    cardCourseLink: `https://coursework.vschool.io/mario-pest-control/`,
-    cardLiveDemo: `./projects/marioPestControl/index.html`,
-    keyPoints: ['HTML', 'DOM', 'JavaScript', 'Event Listeners']
-} ]
+    Title: `"Business Time" Project`,
+    Description: `Create a website for your new business that is well-styled and responsive`,
+    CourseLink: `https://coursework.vschool.io/business-time/`,
+    LiveDemo: `./projects/businessTime3/index.html`,
+    keyPoints: ['HTML', 'CSS', 'Layout', "Media Queries"],
+    bgColorTop: `rgba(73, 144, 153, 0.3)`,
+    bgColorBottom: `rgba(73, 144, 153, 0.8)`,
+    image: `./images/business-time.png`
+}, {
+    Title: `Newsies`,
+    Description: `Re-create the front page of a newspaper using block, inline and inline-block elements.`,
+    CourseLink: `http://coursework.vschool.io/block-vs-inline-newsies/`,
+    LiveDemo: `./projects/newsies/third/index.html`,
+    keyPoints: ['HTML', 'CSS', 'Layout', "Box Model"],
+    bgColorTop: `rgba(119, 153, 134, 0.3)`,
+    bgColorBottom: `rgba(119, 153, 134, 1)`,
+    image: `./images/newsies.png`
+}, {
+    Title: `Design a Blog`,
+    Description: `Design a responsive Blog page with a content feed`,
+    CourseLink: `http://coursework.vschool.io/design-a-blog/`,
+    LiveDemo: `./exercises/fromjon/blog/index.html`,
+    keyPoints: ['HTML', 'CSS', 'Layout', "Box Model", "Media Queries"],
+    bgColorTop: `rgba(119, 153, 134, 0.3)`,
+    bgColorBottom: `rgba(135, 71, 51, 1)`,
+    image: `./images/blog.png`
+} 
+]
+
+
+
+        
+
+
 
 
 
@@ -21,23 +52,20 @@ const data = [{
 
 deck = data.map(d=>`
 <div class="demo-card-square mdl-card mdl-shadow--2dp">
-<div class="mdl-card__title mdl-card--expand">
-<h2 class="mdl-card__title-text">${d.cardTitle}</h2>
-</div>
+<div class="mdl-card__title mdl-card--expand" style="background: linear-gradient(${d.bgColorTop}, ${d.bgColorBottom}),top left / cover no-repeat url(${d.image})">
+<h2 class="mdl-card__title-text">${d.Title}</h2></div>
 <div class="mdl-card__supporting-text">
-${d.cardDescription}
-<hr>
-${d.keyPoints.map(e => `<button type="button" class="mdl-chip"><span class="mdl-chip__text">${e}</span></button>`).join("\n")}
+    <p>${d.Description}</p>
+    <p>${d.keyPoints.map(e =>`<button type="button" class="mdl-chip"><span class="mdl-chip__text">${e}</span></button>`).join("\n")}</p>
 </div>
 <div class="mdl-card__actions mdl-card--border">
-<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-href="${d.cardCourseLink}" target="_blank">Details</a>
-<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-href="${d.cardLiveDemo}" target="_blank">
-View Live Demo
-</a>
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+        href="${d.CourseLink}" target="_blank">Assignment detail</a>
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+        href="${d.LiveDemo}" target="_blank">View Live Demo
+    </a>
 </div>
-</div>`)
+</div>`).join('\n')
 
 const card = document.createElement('div')
 card.className = "card-container"

@@ -1,35 +1,15 @@
 .demo-card-square.mdl-card {
-    /* width: 320px;
-    height: 420px; */
     width: 80vw;
     height: 70vh;
+    margin: 10vh;
     }
   .demo-card-square > .mdl-card__title {
     color: #fff;
-    background: linear-gradient(rgba(255, 251, 0, 0.4), rgba(255, 123, 0, 1)),
-    top left / cover no-repeat url(./images/mario.png);
-  }
+}
 
 body{
     text-align: center;
 }
 .card-container{
     display: inline-block;
-    margin: 5vw;
 }
-
-
-/* 
-.card{
-    display: inline-block;
-    background-color: lightgoldenrodyellow;
-    border: 1px solid salmon;
-    border-radius: 8px;
-    text-align: center;
-    padding: 20px;
-}
-a{
-    font-size: 1.1em;
-    padding: 9px;
-} */
-
