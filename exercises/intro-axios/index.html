@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Todos</title>
+</head>
+<body>
+    <div class="title-bar">
+        <h1 class="title">Todos</h1>
+    </div>
+    <div class="main">
+        <div class="title-bar">
+            <h3 class="title">Add Todo</h3>
+        </div>
+        <form name="addTodo" id="add-todo">
+            <label class="label" for="title">Title</label>
+            <input class="input" name="title" id="title" />
+            <label class="label" for="description">Description</label>
+            <input class="input" name="description" id="description" />
+            <label class="label" for="price">Price</label>
+            <input class="input" name="price" id="price" type="number" />
+            <label class="label" for="imgUrl">Image URL</label>
+            <input class="input" name="imgUrl" id="imgUrl" />
+            <label class="label" for="completed">Completed</label>
+            <input class="input" name="completed" id="completed" type="checkbox"/>
+            <button>submit</button>
+        </form>
+        <div class="todos">
+            <div class="title-bar">
+                <h3 class="title">List of Todos</h3>
+            </div>
+            <ul id="list">
+
+            </ul>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

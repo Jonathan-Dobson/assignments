@@ -15,13 +15,13 @@ function sum(x, y) {
             throw "Both arguments must be a number"
         }
     } catch (e) {
-        return ("ERROR! " + e)
+        throw new Error ("login fail")
     }
 }
 
-test(sum('4', 1))
-test(sum([4],8))
-test(sum(4, 4))
+// test(sum('4', 1))
+// test(sum([4],8))
+// test(sum(4, 4))
 
 
 function login(username, password) {
@@ -36,7 +36,7 @@ function login(username, password) {
             throw "login failed"
         }
     } catch (e) {
-        return ("Login Failed. " + e)
+        throw new Error('Login Failed.')
     }
 }
 
@@ -44,4 +44,23 @@ test(login('hi', '321'))
 test(login('jon', 123))
 test(login('jon', '123'))
 
-log(tests)
+
+
+try {
+    log(login('jon', '123'))
+} catch (e) {
+    log('error' + e)
+}
+
+// try {
+//     login('jon', 111)
+
+// } catch (e) {
+//     log('error' + e)
+// }
+
+
+
+
+
+// log(tests)
