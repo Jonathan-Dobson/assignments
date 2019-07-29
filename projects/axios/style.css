@@ -28,7 +28,6 @@ body{
     border: 1px solid darkslateblue;
     border-radius: 4px;
     box-sizing: border-box;
-
 }
 button{
     width: 100%;
@@ -47,3 +46,31 @@ button{
 .label {
     margin: 10px;
 }
+
+.todo-title{
+    color: brown;
+}
+
+.todo-description{
+    color: darkslategrey;
+    text-transform: none;
+}
+
+#list{
+    list-style-type: none;
+}
+#list > div:nth-child(2n){
+    background-color: rgb(167, 233, 165);
+
+}
+.list-element{
+    padding: 5px;
+}
+.right{
+    /* text-align: right; */
+}
+.mdl-list__item{
+    display: flex;
+    justify-content: space-between;
+}
+
