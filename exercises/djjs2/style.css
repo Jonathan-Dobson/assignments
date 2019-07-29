@@ -1,0 +1,85 @@
+/* *{
+    margin: 0;
+} */
+
+.container{
+    border: 2px solid brown;
+    display: grid;
+    height: 100%;
+    padding: 20px;
+    grid-gap: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(300px,2);
+    grid-template-areas: "one two three" "four five six";
+}
+
+
+.one{
+    background-color: cyan;
+}
+.one:hover {
+    background-color: rgb(17, 223, 103);
+    transform: rotateZ(180deg);
+}
+
+.two{
+    background-color: darkcyan;
+}
+.two:hover{
+    background-color: coral;
+    transform: skewX(20deg);
+}
+
+.three{
+    background-color: rgb(219, 198, 166);
+}
+.three:hover{
+    background-color: darkgreen;
+    transform: translateX(40px);
+}
+
+.four{
+    background-color: rgb(110, 187, 151);
+}
+.four:hover{
+    background-color: darkkhaki;
+    transform: rotateY(50deg);
+}
+
+.five{
+    background-color: rgb(160, 135, 180);
+}
+.five:hover{
+    background-color: transparent;
+    border-top: 250px solid lime;
+    border-right: 250px solid transparent;
+    border-left: 250px solid transparent;
+    height: 20px;
+    margin: 30px;
+    transform: rotateZ(90deg);
+}
+
+.six{
+    background-color: rgb(121, 71, 90);
+}
+.six:hover{
+    background-color: transparent;
+    border-top: 200px solid transparent;
+    border-bottom: 240px solid transparent;
+    border-left: 240px solid hotpink;
+    height: 0px;
+    margin: 20px;
+    transform: rotateZ(90deg);
+    
+}
+
+.container > div{
+    height: 40vh;
+    /* border-radius: 40px; */
+    transition: all 200ms ease-in-out;
+}
+/* .container > div:hover{
+    border-radius: 30px;
+} */
+
+
