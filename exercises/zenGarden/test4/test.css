@@ -1,0 +1,96 @@
+.left{
+    background-color: aqua;
+    height: 250px;
+}
+.right{
+    background-color: blanchedalmond;
+    height: 50px;
+}
+
+.button{
+    background-color: lightcoral;
+    height: 50px;
+}
+
+@media screen and (min-width: 700px){
+    .left{
+        display: inline-block;
+        width: 2fr;
+        height: 300px;
+        margin: 0;
+        position: relative;
+        top: 0;
+    }
+    .right{
+        display: inline-block;
+        background-color: darkolivegreen;
+        width: 1fr;
+        height: 300px;
+    }
+    .button{
+        display: inline-block;
+        height: 50px;
+        width: 100px;
+        position: relative;
+        top: 100px;
+        left: 50px;
+    }
+    /* .left-article{
+        display: inline-block;
+        width: 63%;
+    }
+    .right-article{
+        display: inline-block;
+        width: 36%;
+        vertical-align: top;
+    } */
+
+    .grid-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "left right"
+        "a g" 
+        "b f" 
+        "c ." 
+        "d d" 
+        "e e"
+    }
+
+
+
+
+
+}
+
+.a{
+    grid-area: a;
+    background-color: lightgreen;
+}
+.b{
+    grid-area: b;
+    background-color: burlywood;
+}
+.c{
+    grid-area: c;
+    background-color: darkslateblue;
+}
+.d{
+    grid-area: d;
+    background-color: indianred;
+}
+.e{
+    grid-area: e;
+    background-color: lavender;
+}
+.f{
+    grid-area: f;
+    background-color: lightpink;
+}
+.g{
+    grid-area: g;
+    background-color: magenta;
+}
+

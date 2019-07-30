@@ -1,9 +1,5 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: darkslateblue;
-    font-weight: bold;
-    text-transform: uppercase;
-
 }
 .title {
     text-align: center;
@@ -12,7 +8,6 @@ body{
 .main {
     border: 1px solid black;
     width: 75%;
-
     margin: auto;
     padding: 10px;
 }
@@ -39,39 +34,47 @@ button{
     border-radius: 4px;
     box-sizing: border-box;
     font-weight: bolder;
-    font-size: 1.5em;
     text-transform: uppercase;
-    /* cursor: pointer; */
-}
-
-.label {
-    margin: 10px;
 }
 
 .todo-title{
     color: brown;
+    font-size: 18pt;
 }
 
 .todo-description{
     color: darkslategrey;
     text-transform: none;
+    color: white;
+    font-size: 10pt;
+
+
 }
 #list > div:nth-child(1n){
-    background-color: rgb(203, 230, 223);
+    background-color: rgb(63,81,181,0.3);
+    color: white;
+    font-size: 17pt;
+
 }
 #list > div:nth-child(2n){
-    background-color: rgb(165, 233, 216);
+    background-color: rgb(68,138,255,0.3);
 }
 .list-element{
     display: inline-block;
     padding: 5px;
+    color: white;
+    font-size: 18pt;
 }
 
 .mdl-list__item{
+    margin: 9px;
     padding: 9px;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    transition: all 400ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    color: white;
+
 }
 
 .hide{
@@ -84,5 +87,29 @@ button{
 
 
 .slide-left{
-    transform: translateX(-800px);
+    transform: translateX(-1800px);
 }
+
+.right{
+    position: relative;
+    right: 25px;
+    width: 20px;
+}
+.right > button {
+    margin: 8px;
+}
+
+.mdl-snackbar__text{
+    display: inline-block;
+    width: 100%;
+}
+
+.mdl-js-snackbar, .mdl-snackbar {
+    width: 100%;
+}
+
+.My-Color-Theme-1-rgba { color: rgba(113, 191, 129, 1); }
+.My-Color-Theme-2-rgba { color: rgba(75, 128, 86, 1); }
+.My-Color-Theme-3-rgba { color: rgba(151, 255, 171, 1); }
+.My-Color-Theme-4-rgba { color: rgba(38, 64, 43, 1); }
+.My-Color-Theme-5-rgba { color: rgba(135, 230, 154, 1); }

@@ -45,8 +45,15 @@ form.addEventListener('submit', e => {
     axios.post(`https://api.vschool.io/${config.name}/todo/`, newTodo).then(res => {
         log(res.data)
         getTodos()
+        addedToast(form.title.value)
     })
 })
+
+function addedToast(msg){
+    var snackbarContainer = document.querySelector('#demo-toast-example');
+    var data = {message: 'Added Todo: ' + msg };
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+}
 
 
 // GET TODOS FROM API
@@ -73,30 +80,41 @@ function updateTodoList(data){
             tr.className = "mdl-list__item"
         }
 
+        let bgColorBottom = `rgba(83, 50, 167, 0.7)`;
+        let bgColorTop = `rgba(83, 50, 167, 0.4)`;
         tr.innerHTML = `
         <div>
-            <div class="list-element">
-                <button id="${e._id}"  class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab ">
-                    <i class="material-icons ${notdone}">check_box_outline_blank</i>
-                    <i class="material-icons ${donebox}">check_box</i>
-                </button>
-            </div>
-            <div class="list-element">
-                <span >${title}</span>
-            </div>
-            <div class="list-element">
-                <i class="todo-description">${e.description||!undefined&&""}</i>
-            </div>
-            <img src="${e.imgUrl}" width="90px"/>
-        </div>
-        <div class="list-element right">
-            <button id="delete-button" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
-                <i id="${e._id}" class="material-icons">backspace</i>
+        <div class="list-element">
+            <button id="${e._id}" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored ">
+                <i class="material-icons ${notdone}">check_box_outline_blank</i>
+                <i class="material-icons ${donebox}">check_box</i>
             </button>
         </div>
+        <p class="list-element">
+            <span>${title}</span>
+        </p>
+        <p class="list-element">${e.price!==null?('$'+e.price):""}</p>
+        <p class="list-element">
+            <i class="todo-description">${e.description||!undefined&&""}</i>
+        </p>
+    </div>
+    
+    <!-- Right side -->
+    <div class="list-element right">
+        <button id="delete-button"
+            class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+            <i class="material-icons">edit</i>
+        </button>
+        <button id="delete-button"
+            class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+            <i id="${e._id}" class="material-icons">backspace</i>
+        </button>
+    </div>
         `
         tr.id = e._id
+        tr.style.background = `linear-gradient(${bgColorTop}, ${bgColorBottom}),top left / contain no-repeat url(${e.imgUrl})`
         tbody.appendChild(tr)
+
     })
 }
 

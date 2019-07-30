@@ -1,0 +1,38 @@
+.left{
+    background-color: aqua;
+    height: 250px;
+}
+.right{
+    background-color: blanchedalmond;
+    height: 50px;
+}
+
+.button{
+    background-color: lightcoral;
+    height: 50px;
+}
+
+@media screen and (min-width: 500px){
+    .left{
+        display: inline-block;
+        width: 63%;
+        height: 300px;
+        margin: 0;
+        position: relative;
+        top: 0;
+    }
+    .right{
+        display: inline-block;
+        background-color: darkolivegreen;
+        width: 36%;
+        height: 300px;
+    }
+    .button{
+        display: inline-block;
+        height: 50px;
+        width: 100px;
+        position: relative;
+        top: 100px;
+        left: 50px;
+    }
+}

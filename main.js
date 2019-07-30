@@ -1,6 +1,16 @@
 const {log} = console
 
-const data = [{
+const data = [
+{
+    Title: `Axios Todo Project`,
+    Description: `Build a frontend site that pulls a list of todos down from the API to display them, and allows the user to perform other CRUD methods on them as well.`,
+    CourseLink: `https://coursework.vschool.io/axios-todo-practice/`,
+    LiveDemo: `./projects/axios/index.html`,
+    keyPoints: ['HTML', 'CSS', 'DOM', "Event Listeners", "Forms", "API", "Axios", "XHR", "Async"],
+    bgColorTop: `rgba(255, 205, 64, 0.3)`,
+    bgColorBottom: `rgba(73, 144, 153, 0.8)`,
+    image: `https://coursework.vschool.io/content/images/2017/08/advisor-to-do-list.jpg`
+}, {
     Title: `"Business Time" Project`,
     Description: `Create a website for your new business that is well-styled and responsive`,
     CourseLink: `https://coursework.vschool.io/business-time/`,

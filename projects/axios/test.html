@@ -1,0 +1,27 @@
+<div>
+    <div class="list-element">
+        <button id="${e._id}" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab ">
+            <i class="material-icons ${notdone}">check_box_outline_blank</i>
+            <i class="material-icons ${donebox}">check_box</i>
+        </button>
+    </div>
+    <div class="list-element">
+        <span>${title}</span>
+    </div>
+    <div class="list-element">${e.price!==null?('$'+e.price):""}</div>
+    <p class="list-element">
+        <i class="todo-description">${e.description||!undefined&&""}</i>
+    </p>
+</div>
+
+<!-- Right side -->
+<div class="list-element right">
+    <button id="delete-button"
+        class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+        <i class="material-icons">edit</i>
+    </button>
+    <button id="delete-button"
+        class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+        <i id="${e._id}" class="material-icons">backspace</i>
+    </button>
+</div>
