@@ -7,14 +7,27 @@ const config = {
 }
 
 const todoData = {}
-// DELETE
+// DELETE and PUT
 const listOfTodos = document.getElementById('list')
 listOfTodos.addEventListener('click', e=>{
+    let item = e.target.parentNode.parentNode.parentNode
+    log(e.target.parentNode.parentNode.parentNode)
     if(e.target.parentNode.id==='delete-button'){
-        log(e.target.id)
+        axios.delete(`https://api.vschool.io/${config.name}/todo/${e.target.id}`).then(res=>{
+            item.className = "mdl-list__item slide-left"
+            setTimeout(function(){
+                item.remove()
+            },500)
+        })
+    }else if(e.target.textContent==='check_box_outline_blank'){
+        axios.put(`https://api.vschool.io/${config.name}/todo/${e.target.parentNode.id}` , {completed: true}).then(res=>{
+            getTodos()
+        })
+    }else if(e.target.textContent==='check_box'){
+        axios.put(`https://api.vschool.io/${config.name}/todo/${e.target.parentNode.id}` , {completed: false}).then(res=>{
+            getTodos()
+        })
     }
-    axios.delete(`https://api.vschool.io/${config.name}/todo/${e.target.id}`)
-    getTodos()
 })
 
 // FORM SUBMIT HANDLER to POST TO API
@@ -48,17 +61,33 @@ function updateTodoList(data){
     clearUL(tbody)
     data.forEach((e,i)=>{
         let tr = document.createElement('div')
+        if(e.completed){
+            notdone = "hide"
+            donebox = ""
+            title = `<strike>${e.title}</strike>`
+            tr.className = "mdl-list__item done"
+        }else{
+            notdone = ""
+            donebox = "hide"  
+            title = e.title
+            tr.className = "mdl-list__item"
+        }
+
         tr.innerHTML = `
-        <div class="list-element">
-            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
-            <i class="material-icons">check_circle_outline</i>
-            </button>
-        </div>
-        <div class="list-element">
-            <span class="mdl-checkbox__label">${e.title}</span>
-        </div>
-        <div class="list-element">
-            <i class="todo-description">${e.description||!undefined&&""}</i>
+        <div>
+            <div class="list-element">
+                <button id="${e._id}"  class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab ">
+                    <i class="material-icons ${notdone}">check_box_outline_blank</i>
+                    <i class="material-icons ${donebox}">check_box</i>
+                </button>
+            </div>
+            <div class="list-element">
+                <span >${title}</span>
+            </div>
+            <div class="list-element">
+                <i class="todo-description">${e.description||!undefined&&""}</i>
+            </div>
+            <img src="${e.imgUrl}" width="90px"/>
         </div>
         <div class="list-element right">
             <button id="delete-button" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
@@ -66,7 +95,6 @@ function updateTodoList(data){
             </button>
         </div>
         `
-        tr.className = "mdl-list__item"
         tr.id = e._id
         tbody.appendChild(tr)
     })

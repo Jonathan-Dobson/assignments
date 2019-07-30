@@ -11,9 +11,10 @@ body{
 
 .main {
     border: 1px solid black;
-    width: 55%;
+    width: 75%;
+
     margin: auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 #add-todo {
@@ -40,7 +41,7 @@ button{
     font-weight: bolder;
     font-size: 1.5em;
     text-transform: uppercase;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .label {
@@ -55,22 +56,33 @@ button{
     color: darkslategrey;
     text-transform: none;
 }
-
-#list{
-    list-style-type: none;
+#list > div:nth-child(1n){
+    background-color: rgb(203, 230, 223);
 }
 #list > div:nth-child(2n){
-    background-color: rgb(167, 233, 165);
-
+    background-color: rgb(165, 233, 216);
 }
 .list-element{
+    display: inline-block;
     padding: 5px;
 }
-.right{
-    /* text-align: right; */
-}
+
 .mdl-list__item{
+    padding: 9px;
     display: flex;
     justify-content: space-between;
+    transition: all 400ms ease-in-out;
 }
 
+.hide{
+    display: none;
+}
+.done{
+    background-color: darkslategrey ;
+    color: darkgray;
+}
+
+
+.slide-left{
+    transform: translateX(-800px);
+}
