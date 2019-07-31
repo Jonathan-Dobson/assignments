@@ -2,6 +2,7 @@
     margin: 0;
 }
 
+
 /* FONT IMPORTING */
 @font-face{
     font-family: 'main text';
@@ -21,6 +22,7 @@
     src: url(../images/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDA.woff2)
 }
 
+
 /* FOOTER ICON BAR */
 .icon{
     font-family: 'icons';
@@ -38,6 +40,7 @@
     display: inline-block;
     margin-left: 52px;
 }
+
 
 /* REGULAR HTML ELEMENTS */
 body{
@@ -58,15 +61,11 @@ h3{
 }
 
 
-
-
-
+/* PRIMARY GRID LAYOUT */
 .a, .b, .c, .d, .e, .f, .g {
     padding: 4vw;
     
 }
-
-
 .a{
     grid-area: a;
     background-color: #FFFFFF;
@@ -117,6 +116,8 @@ h3{
     background-color: #ECF4F0;
 }
 
+
+/* HEADER WITH TITLE AND BUTTON */
 .header{
     grid-area: head;
     background: #365f5f left / cover no-repeat url(../images/huntington.jpg);
@@ -127,16 +128,87 @@ h3{
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto 70px;
     grid-template-areas: 
-    " . . "
+    " title title "
     " bar bar ";
+    font-family: 'h3 font';
+    
+}
+.head-title{
+    grid-area: title;
+    color: #ECF4F0;
+    text-align: center;
+    font-size: 25pt;
+
 }
 .button-bar{
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(180, 209, 184, 0.2);
     grid-area: bar;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 74px auto 74px 0px;
+    grid-template-rows: 70px;
+}
+.left-btn{
+    grid-column: 2/3;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ECF4F0;
+    text-align: center;
+    padding-top: 18px;
+    font-size: 12pt;
+    font-family: 'h3 font';
+    transition: background-color 250ms, font-size 400ms;
 }
 
+.right-btn{
+    grid-column: 3/4;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0;
+    text-align: center;
+    font-size: 32pt;
+    font-family: 'icons';
+    color: #ECF4F0;
+
+}
+.right-btn:before{
+    content: ">";
+    position: relative;
+    top: -6px;
+}
+.right-btn:hover, .left-btn:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.enso{
+    height: 80px;
+}   
+
+
+
+
+/* MEDIA QUERY FOR WIDE DISPLAY */
 
 @media screen and (min-width: 1132px){
+
+    .button-bar{
+        grid-template-columns: 74px auto 68px 14px;
+        grid-template-rows: 1fr 70px 1fr;
+    }
+    .left-btn{
+        grid-row: 2/3;
+        font-size: 14pt;
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: background-color 250ms, font-size 400ms;
+
+
+    }
+    .right-btn{
+        grid-row: 2/3;
+        margin: 0 0 0 1px;
+    }
+
+
+
     /* .left{
         display: inline-block;
         height: 300px;
@@ -183,7 +255,7 @@ h3{
     .header{
 
         grid-template-areas: 
-        " . bar "
+        " title bar "
         " . bar ";
     }
 
