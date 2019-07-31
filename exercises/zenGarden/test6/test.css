@@ -51,7 +51,7 @@ body{
     font-size: 10pt;
     /* letter-spacing: 1pt; */
     word-spacing: 1pt;
-    background: #365f5f bottom / cover no-repeat url(../images/bamboo.png);
+    background: #B3D0BE bottom / cover no-repeat url(../images/bamboo.png);
     background-attachment: fixed;
 }
 h3{
@@ -59,12 +59,14 @@ h3{
     font-size: 15pt;
     font-weight: 200;
 }
+p{
+    padding: 6px 0 6px 0;
+}
 
 
 /* PRIMARY GRID LAYOUT */
 .a, .b, .c, .d, .e, .f, .g {
-    padding: 4vw;
-    
+    padding: 5vh 10vw 5vh 10vw;
 }
 .a{
     grid-area: a;
@@ -72,7 +74,8 @@ h3{
 }
 .b{
     grid-area: b;
-    background: rgba(192, 221, 203,0.1);
+    /* background: rgba(218, 231, 223, 0.1); */
+
 }
 .c{
     grid-area: c;
@@ -107,9 +110,13 @@ h3{
     grid-area: f;
     background-color: rgba(192, 221, 203,0.3);
 }
+.f > div{
+    display: inline-block;
+    width: 49%;
+}
 .g{
     grid-area: g;
-    background-color: #B4D1BF;
+    background-color: #E4ECE7;
 }
 .h{
     grid-area: h;
@@ -121,25 +128,57 @@ h3{
 .header{
     grid-area: head;
     background: #365f5f left / cover no-repeat url(../images/huntington.jpg);
-    height: 250px;
-    border-top: 12px solid rgba(11, 58, 29, 0.6);
-
+    height: 230px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto 70px;
+    grid-template-rows: 10px auto 70px 0;
     grid-template-areas: 
+    " htop htop"
     " title title "
     " bar bar ";
     font-family: 'h3 font';
     
 }
+.header-top{
+    grid-area: htop;
+    background-color: #214D4E;
+    height: 10px;
+}
 .head-title{
     grid-area: title;
     color: #ECF4F0;
     text-align: center;
-    font-size: 25pt;
-
+    font-size: 28pt;
+    font-weight: 500;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: auto max-content max-content auto;
+    grid-template-rows: 20px 20px 50px 20px auto;
+    grid-template-areas: 
+    ". . . ."
+    ". img . ."
+    ". img txt ."
+    ". img subt ."
+    ". . . .";
 }
+.txt-title {
+    grid-area: txt;
+    display: inline-block;
+}
+.head-title > img {
+    grid-area: img;
+    width: 70px;
+    align-self: center;
+    padding: 20px;
+}
+.sub-title {
+    grid-area: subt;
+    font-family: 'italic footer';
+    font-size: 14pt;
+    color: rgb(155, 192, 174);
+}
+
+
 .button-bar{
     background-color: rgba(180, 209, 184, 0.2);
     grid-area: bar;
@@ -179,9 +218,6 @@ h3{
     cursor: pointer;
 }
 
-.enso{
-    height: 80px;
-}   
 
 
 
@@ -199,96 +235,57 @@ h3{
         font-size: 14pt;
         background-color: rgba(255, 255, 255, 0.1);
         transition: background-color 250ms, font-size 400ms;
-
-
     }
     .right-btn{
         grid-row: 2/3;
         margin: 0 0 0 1px;
     }
-
-
-
-    /* .left{
-        display: inline-block;
-        height: 300px;
-        margin: 0;
-        position: relative;
-        top: 0;
+    .txt-title{
+        font-size: 36pt;
     }
-    .right{
-        display: inline-block;
-        background-color: darkolivegreen;
-        height: 300px;
-    } */
-    /* .button{
-        display: inline-block;
-        height: 50px;
-        width: 100px;
-        position: relative;
-        top: 100px;
-        left: 50px;
-    } */
-    /* .left-article{
-        display: inline-block;
-        width: 63%;
+    .head-title{
+    grid-template-columns: 1fr max-content max-content 1fr;
+    grid-template-rows: 20px 20px 70px 20px auto;
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". . txt ."
+    ". img subt ."
+    ". . . .";
+}
+
+    .head-title > img {
+        width: 120px;
     }
-    .right-article{
-        display: inline-block;
-        width: 36%;
-        vertical-align: top;
-    } */
+    .sub-title {
+        font-size: 18pt;
+    }
+
+
+
     
     .grid-container{
-        width: 100%;
+        /* width: 100%; */
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 250px auto;
+        grid-template-rows: 300px auto;
         grid-template-areas: 
         "head head"
-        "a g" 
-        "b f" 
+        "a f" 
+        "b g" 
         "c h" 
         "d d" 
         "e e"
     }
     .header{
-
-        grid-template-areas: 
+        height: 300px;
+        grid-template-areas:
+        " htop htop "
         " title bar "
         " . bar ";
     }
 
 }
-
-
-/* HERO HEADER */
-/* .left{
-
-    background: #365f5f left / cover no-repeat url(../images/huntington.jpg);
-
-    background-color: whitesmoke;
-    height: 250px;
-}
-.right{
-    background-color: rgb(233, 222, 222, 0.2);
-    min-height: 70px;
-    text-align: center;
-
-}
-
-.button{
-    background-color: rgba(228, 138, 138, 0.692);
-    min-height: 70px;
-    text-align: center;
-    margin-left: 70px;
-    margin-right: 70px;
-    cursor: pointer;
-}
-.button:hover{
-    background-color: rgba(230, 221, 221, 0.692);
-} */
-
 
 
 
