@@ -314,6 +314,9 @@ p{
         "d d" 
         "e e";
     }
+    h3{
+        font-size: 21pt;
+    }
 
     .button-bar{
         grid-template-columns: 74px auto 68px 14px;
@@ -355,6 +358,10 @@ p{
         " title bar "
         " . bar ";
     }
+    .a, .b, .c{
+        font-size: 12pt;
+        padding: 7vh 4vw 4vh 10vw;
+    }
     .d{
         font-size: 24pt;
         padding: 98px;
@@ -375,9 +382,9 @@ p{
         margin: 0 0 0px 0;
         padding: 24px 0 20px 0;
         width: 70%;
-
+        
     }
-    .f-row > div:nth-child(1n) {
+    .f-row:last-child > div:nth-child(2){
         border-bottom: none;
     }
     .f-row > div > h3{
