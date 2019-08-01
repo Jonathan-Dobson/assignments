@@ -17,7 +17,7 @@
     font-family: 'italic footer';
     src: url(../images/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDA.woff2)}
 
-/* COLORS */
+/* COLORS and EFFECTS*/
 .faded-green{
     background-color: #ECF4F0;
 }
@@ -33,6 +33,19 @@
 .med-green-text{
     color: rgba(138,188,159,0.4);
 }
+.dotted-underline{
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    font-size: 11pt;
+}
+.blue-link{
+    color: #0d8ba1;
+}
+.blue-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 /* DIV E - FOOTER ICON BAR */
 .icon{
@@ -74,6 +87,7 @@ p{
 }
 
 
+
 /* PRIMARY GRID LAYOUT */
 .grid-container{
     display: grid;
@@ -105,7 +119,8 @@ p{
 }
 .d{
     grid-area: d;
-    background: #365f5f left / cover no-repeat url(../images/koi.jpg);
+    background: url(../images/gridlines.png),
+    url(../images/contours.png), #365f5f left / cover no-repeat url(../images/koi.jpg);
     color: rgb(146, 160, 152);
     font-size: 16pt;
     text-align: center;
@@ -209,7 +224,13 @@ p{
 /* HEADER WITH TITLE AND BUTTON */
 .header{
     grid-area: head;
-    background: #365f5f left / cover no-repeat url(../images/huntington.jpg);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255,255,255,0) 20%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(0,0,0,0.0) 20%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(0,0,0,0.0) 9%),
+    linear-gradient(-90deg, rgba(255, 255, 255, 0.1), rgba(0,0,0,0.0) 9%),
+    url(../images/gridlines.png),
+    url(../images/contours.png),
+     #365f5f left / cover no-repeat url(../images/huntington.jpg);
     height: 230px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -230,12 +251,12 @@ p{
     grid-area: title;
     color: #ECF4F0;
     text-align: center;
-    font-size: 28pt;
+    font-size: 27pt;
     font-weight: 500;
     vertical-align: middle;
     display: grid;
     grid-template-columns: auto max-content max-content auto;
-    grid-template-rows: 20px 20px 50px 20px auto;
+    grid-template-rows: 12px 20px 50px 20px auto;
     grid-template-areas: 
     ". . . ."
     ". img . ."
@@ -248,9 +269,10 @@ p{
 }
 .head-title > img {
     grid-area: img;
-    width: 70px;
+    width: 120px;
     align-self: center;
     padding: 20px;
+    filter: opacity(0.5);
 }
 .sub-title {
     grid-area: subt;
@@ -262,7 +284,8 @@ p{
 
 /* HEADER VIEW ALL DESIGNS BUTTONS */
 .button-bar{
-    background-color: rgba(180, 209, 184, 0.2);
+    /* background-color: rgba(180, 209, 184, 0.2); */
+    background-color: rgba(255, 255, 255, 0.2);
     grid-area: bar;
     text-align: right;
     display: grid;
@@ -271,7 +294,6 @@ p{
 }
 .left-btn{
     grid-column: 2/3;
-    background-color: rgba(255, 255, 255, 0.1);
     color: #ECF4F0;
     text-align: center;
     padding-top: 18px;
@@ -281,7 +303,7 @@ p{
 }
 .right-btn{
     grid-column: 3/4;
-    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(255, 255, 255, 0.1); */
     padding: 0;
     text-align: center;
     font-size: 32pt;
@@ -319,25 +341,30 @@ p{
     }
 
     .button-bar{
+        background: linear-gradient(180deg, rgba(92, 92, 92, 0.1), rgba(56, 56, 56, 0.1) 90%);
+        /* background-color: rgba(0,0,0,0.1); */
         grid-template-columns: 74px auto 68px 14px;
         grid-template-rows: 1fr 70px 1fr;
     }
     .left-btn{
         grid-row: 2/3;
         font-size: 14pt;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(190, 190, 190, 0.1);
         transition: background-color 250ms, font-size 400ms;
     }
     .right-btn{
+    background-color: rgba(255, 255, 255, 0.1);
+
         grid-row: 2/3;
         margin: 0 0 0 1px;
     }
     .txt-title{
-        font-size: 36pt;
+        font-size: 38pt;
     }
     .head-title{
-    grid-template-columns: 1fr max-content max-content 1fr;
-    grid-template-rows: 20px 20px 70px 20px auto;
+        text-align: left;
+    grid-template-columns: auto max-content max-content auto;
+    grid-template-rows: 48px 20px 80px 20px auto;
     grid-template-areas: 
     ". . . ."
     ". . . ."
@@ -346,9 +373,16 @@ p{
     ". . . .";
     }
     .head-title > img {
-        width: 120px;
+        padding-top: 0;
+        width: 170px;
+        filter: opacity(1);
+        margin: 0 25px 0 60px;
     }
     .sub-title {
+        font-size: 18pt;
+        color: #BDD0C1;
+    }
+    .sub-title > .dotted-underline {
         font-size: 18pt;
     }
     .header{
