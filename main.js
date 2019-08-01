@@ -2,6 +2,15 @@ const {log} = console
 
 const data = [
 {
+    Title: `CSS Zen Garden Project`,
+    Description: `Reproduce a PSD design with only HTML and CSS`,
+    CourseLink: `https://coursework.vschool.io/css-zen-garden/`,
+    LiveDemo: `./exercises/zenGarden/test8/test.html`,
+    keyPoints: ['HTML', 'CSS', 'PSD', "Layout", "CSS Grid"],
+    bgColorTop: `rgba(255, 205, 64, 0.3)`,
+    bgColorBottom: `rgba(73, 144, 153, 0.8)`,
+    image: `./images/zengarden.png`
+}, {    
     Title: `Axios Todo Project`,
     Description: `Build a frontend site that pulls a list of todos down from the API to display them, and allows the user to perform other CRUD methods on them as well.`,
     CourseLink: `https://coursework.vschool.io/axios-todo-practice/`,
