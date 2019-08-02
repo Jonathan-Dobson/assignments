@@ -64,6 +64,18 @@
     display: inline-block;
     margin: 0 22px 0 22px;
 }
+.icon2:before{
+    content: "5";
+}
+.icon2:hover::before{
+    content: "%";
+}
+.icon3:before{
+    content: "3";
+}
+.icon3:hover::before{
+    content: "#";
+}
 
 
 /* REGULAR HTML ELEMENTS */
