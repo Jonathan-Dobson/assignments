@@ -1,0 +1,8 @@
+body{
+    background: rgb(220, 237, 243);
+}
+
+.modal-mask{
+    transition: all 1s linear;
+}
+

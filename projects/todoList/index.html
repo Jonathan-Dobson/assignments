@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+
+
+    <div class="modal-mask" style="display: none" id="delete-done-confirmation-modal">
+        <div class="modal">
+            <div class="modal-head">
+                <p class="modal-title">Delete All Done Items?</p>
+            </div>
+            <div class="modal-body">
+                <p>This will permanently delete all of the items in the All Done List!</p>
+                <p>Do you wish to proceed?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="button-primary" id="delete-all-proceed">Yes - Delete</button>
+                <button class="button-primary" id="delete-all-cancel">No - Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-mask" style="display: none" id="new-todo-modal">
+            <div class="modal">
+                <div class="modal-head">
+                    <p class="modal-title">Add New Todo</p>
+                </div>
+                <div class="modal-body">
+                    <form action="new-todo-form">
+                        <input type="text" name="title" placeholder="Title" autocomplete="off">
+                        <textarea name="description" id="" cols="30" rows="1" placeholder="Description"></textarea>
+                        <textarea name="imgUrl" id="imgUrl" cols="30" rows="1" placeholder="Image URL"></textarea>
+                        <select name="" id="">
+                            <option value="">Not Completed</option>
+                            <option value="">Completed</option>
+                        </select>
+                        <!-- <input type="file" name="" id="" accept="image/png, image/jpeg"> -->
+                    </form>                    
+                </div>
+                <div class="modal-footer">
+                    <button class="button-primary" id="save-add-new">Save</button>
+                    <button class="button-primary" id="cancel-add-new">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-4 col-sm-12 panel" id="todos-list">
+            <div class="panel-head">
+                <h2 class="panel-title">To Do</h2>
+            </div>
+            <div class="panel-body">
+                <p>clean car</p>
+            </div>
+            <div class="panel-footer">
+                <button class="button-primary button-round button-shadow" id="add-todo">Add To Do</button>
+            </div>
+        </div>
+
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-4 col-sm-12 panel" id="todos-done">
+            <div class="panel-head">
+                <h2 class="panel-title">Done</h2>
+            </div>
+            <div class="panel-body">
+                <p>clean car</p>
+            </div>
+            <div class="panel-footer">
+                <button class="button-danger button-round button-shadow" id="delete-the-done-list">Delete Done</button>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+
+    </div>
+
+
+    <script src="eventHandler.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

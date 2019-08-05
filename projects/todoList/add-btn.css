@@ -1,0 +1,29 @@
+
+
+.btn-add{
+    --size: 2em;
+    font-size: var(--size);
+    border: 0;
+    height: var(--size);
+    width: var(--size);
+    border-radius: var(--size);
+    box-shadow: 1px 1px 5px grey;
+    /* background: radial-gradient(pink,red); */
+    transition: all 190ms ease-out;
+}
+
+.btn-add:focus{
+    outline: none;
+    box-shadow: 1px 1px 8px grey;
+    transform: scale(1.1);
+}
+.btn-add:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 8px grey;
+    transform: scale(1.1);
+
+}
+.btn-add:active{
+    box-shadow: 0px 1px 1px grey;
+    transform: scale(1);
+}

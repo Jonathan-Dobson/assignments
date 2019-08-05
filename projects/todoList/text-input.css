@@ -1,0 +1,28 @@
+.text-input > input{
+    display: inline-block;
+    padding-top: 16px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid darkgrey;  
+    translate: all 1000ms ease-in-out;
+    background-color: hsl(240, 64%, 53%, 0.5);
+}
+
+.text-input {
+    background-color: aquamarine;
+    text-align: left;
+}
+
+.text-input > label {
+    display: inline-block;
+    font-size: 9px;
+    background-color: red;
+}
+
+
+input:focus{
+    outline: none;
+    
+}
+
+
