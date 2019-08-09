@@ -14,6 +14,8 @@ class Modal {
 
 const newTodoModal = new Modal('new-todo-modal')
 const deleteDoneTodosModal = new Modal('delete-done-confirmation-modal')
+const todoForm = document.getElementById('new-todo-form')
+
 
 document.body.addEventListener('click', e => {
     switch (e.target.id) {
@@ -22,6 +24,7 @@ document.body.addEventListener('click', e => {
             break;
         case 'cancel-add-new':
             newTodoModal.hide()
+            clearForm()
             break;
         case 'save-add-new':
             newTodoModal.hide()
@@ -35,6 +38,14 @@ document.body.addEventListener('click', e => {
         case 'delete-all-cancel':
             deleteDoneTodosModal.hide()
     }
-    log(e.target.id)
+    // log(e.target.id)
 })
 
+
+function clearForm(){
+    let form = todoForm.children
+    for(let i=0;i<form.length;i++){
+        form[i].value=null;
+    }
+    todoForm.completed.value = false
+}

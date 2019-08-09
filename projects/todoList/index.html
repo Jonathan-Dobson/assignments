@@ -35,13 +35,14 @@
                     <p class="modal-title">Add New Todo</p>
                 </div>
                 <div class="modal-body">
-                    <form action="new-todo-form">
-                        <input type="text" name="title" placeholder="Title" autocomplete="off">
-                        <textarea name="description" id="" cols="30" rows="1" placeholder="Description"></textarea>
+                    <form name="new-todo-form" id="new-todo-form">
+                        <input type="text" name="title" id="title" placeholder="Title" autocomplete="off">
+                        <input type="text" name="price" id="price" placeholder="Price">
+                        <textarea name="description" id="description" cols="30" rows="1" placeholder="Description"></textarea>
                         <textarea name="imgUrl" id="imgUrl" cols="30" rows="1" placeholder="Image URL"></textarea>
-                        <select name="" id="">
-                            <option value="">Not Completed</option>
-                            <option value="">Completed</option>
+                        <select name="completed" id="completed">
+                            <option value="false" selected>Not Completed</option>
+                            <option value="true">Completed</option>
                         </select>
                         <!-- <input type="file" name="" id="" accept="image/png, image/jpeg"> -->
                     </form>                    

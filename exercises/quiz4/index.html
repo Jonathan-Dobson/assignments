@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        body{
+            height: 100%;
+            display: grid;
+            /* grid-template-columns: 1fr; */
+            grid-auto-rows: 100px auto 100px;
+            grid-template-areas:
+            " a a a a " 
+            " b c c c "
+            " b d d d "
+        }
+        div{
+            border: 3px solid blue;
+        }
+        .a{
+            grid-area: a;
+        }
+        .b{
+            grid-area: b;
+        }
+        .c{
+            grid-area: c;
+        }
+        .d{
+            grid-area: d;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="a">aa</div>
+    <div class="b">bb</div>
+    <div class="c">cc</div>
+    <div class="d">dd</div>
+</body>
+</html>
