@@ -4,7 +4,7 @@ const border = false
 console.log(
 border 
     ? "result A"
-    : color==='red' 
+    : color==='red'
         ? "result B"
         : "result C"    
 )

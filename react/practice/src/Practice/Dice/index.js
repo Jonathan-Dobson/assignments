@@ -1,35 +1,45 @@
 import React from 'react';
 import './dice.css';
 
-// const visualDice = {
-//     one: 
-//     [0,0,0,
-//      0,1,0,
-//      0,0,0],
-// }
+const printDie = (...pattern) => {
+    const result = new Array(9).fill(0)
+    pattern.forEach((...args)=>{
+        result[args[0]-1] = 1
+    })
+    return result
+}
 
-// const DiceDots = (props) => {
-//     [0,0,0,0,1,0,0,0,0].map((el,i) => {
-//         return(
-//             <div className={el?'circle':''}></div>
-//         )
-//     }
-//     )
-// }
+const visualDice = {
+    1: printDie(5),
+    2: printDie(1,9),
+    3: printDie(1,5,9),
+    4: printDie(1,3,7,9),
+    5: printDie(1,3,7,9,5),
+    6: printDie(1,3,4,6,7,9),
+    7: printDie(1,3,4,6,7,9,5),
+    8: printDie(1,2,3,4,6,7,8,9),
+    9: printDie(1,2,3,4,5,6,7,8,9),
+}
 
-// const visualOne
+const DiceDots = (props) => {
+    return props.pattern.map((el,i) => {
+        return(
+            <div className={el?'circle':''}></div>
+        )
+    }
+    )
+}
 
-
+const MakeDie = (props) => <div className='die'>
+        <DiceDots pattern={visualDice[props.number]} />
+    </div>
 
 const Dice = (props) => props.dice.map((e,i)=><Die value={e} key={i*rand(5000)} />)
 
 const Die = (props) => <li style={{
     display: "inline-block",
-    backgroundColor: "white",
-    border: "1px solid black",
-    padding: 22,
-    margin: 5
-}}>{props.value}</li>
+    margin: 5 }}>
+    <MakeDie number={props.value}/></li>
 
 const rand = (max=6) => Math.floor(0.9999 + Math.random() * max)
 
@@ -43,7 +53,6 @@ class DiceBox extends React.Component {
     }
 
     roll = (e) => {
-        console.log(this.state.dice);
       this.setState({
           dice: new Array(this.state.count).fill(0).map(e=>rand())
       })
@@ -62,23 +71,9 @@ class DiceBox extends React.Component {
                 >Roll</button>
                 <ul>
                     <Dice dice={this.state.dice}/>
-                </ul>
-                <div className='die'>
-
-                        <div className="circle"></div>
-                        <div className=""></div>
-                        <div className="circle"></div>
-                        <div className="circle"></div>
-                        <div className=""></div>
-                        <div className="circle"></div>
-                        <div className="circle"></div>
-                        <div className=""></div>
-                        <div className="circle"></div>
-
-                </div>
-                <div className='die'>
-                    {/* <DiceDots /> */}
-                </div>
+                </ul>              
+                
+                
             </div>
         );
     }
