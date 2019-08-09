@@ -1,0 +1,38 @@
+.die{
+    display: grid;
+    
+    grid-template-columns: repeat(3,33px);
+    grid-template-rows: repeat(3,33px);
+    
+
+    width: 100px;
+    height: 100px;
+    background-color: white;
+
+    border-radius: 9px;
+    box-shadow: -8px -8px 2px 1px black inset;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+
+    
+    
+    margin: 20px;
+    padding: 12px 18px 18px 12px;
+    
+}
+
+.circle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+

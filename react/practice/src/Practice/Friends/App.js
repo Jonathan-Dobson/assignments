@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import data from './data'
+import data from './data.js'
 
 const Pet = (pet) =><div style={pet.style}>
   <span>
