@@ -1,62 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Link, BrowserRouter, Switch, Route} from "react-router-dom";
 import './index.css';
+import Dice from './Practice/Dice/';
+import NameEntry from './Practice/NameEntry/';
+import Friends from './Practice/Friends/App';
+import Home from './Practice/Home';
 
-// import Dice from './Practice/Dice/index.js';
-// import NameEntry from './Practice/NameEntry/';
-// import Friends from './Practice/Friends/App';
-
-
-// const AppList = [{
-//         title: "Dice Roll",
-//         import: <Dice />
-//     },{
-//         title: "Name Entry",
-//         import: <NameEntry />
-//     },{
-//         title: "Friends with Pets",
-//         import: <Friends />
-//     }
-// ]
-
-
-
-// const ButtonMap = () => AppList.map(app=>
-//     <button style={{
-//         alignSelf: "center",
-//         width: "70%",
-//         fontSize: "3rem",
-//         margin: 10,
-//         padding: 10
-//     }} onClick={
-//         StartApp.bind(this,app.import)
-//     }>
-//         {app.title}
-//     </button>)
+const App = () => (
+    <div>
+      <nav style={{
+          margin: 20
+      }}>
+        <Link to="/">Home</Link> 
+        <span> | </span>
+        <Link to="/friends">Friends with Pets</Link> 
+        <span> | </span>
+        <Link to="/dice">Dice Roll</Link>
+        <span> | </span>
+        <Link to="/nameEntry">Name Entry</Link>
 
 
-// var menu = document.getElementById('menu')
-
-// const Menu = () => {
-//     return (
-//         <div style={{
-//         display: "flex",
-//         flexDirection: "column",
-//     }}>
-//             <h1>Jonathan's React Exercises</h1>
-//             <ButtonMap />
-//         </div>
-//     )
-// }
-
-// ReactDOM.render(<Menu />, document.getElementById('menu'));
-
-
-// function StartApp (app){
-//     menu.remove()
-//     ReactDOM.render(app, document.getElementById('root'));
-// }
+      </nav>
+      <div>
+        <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/friends" component={Friends} />
+        <Route path="/dice" component={Dice} />
+        <Route path="/nameEntry" component={NameEntry} />
 
 
 
+        </Switch>
+      </div>
+    </div>
+  );
 
+ReactDOM.render(
+    <BrowserRouter>
+    <App/>
+</BrowserRouter>, document.getElementById("root"));

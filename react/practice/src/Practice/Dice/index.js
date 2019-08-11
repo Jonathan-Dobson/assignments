@@ -7,7 +7,7 @@ class DiceBox extends React.Component {
     constructor() {
         super();
         this.state = {
-            count: 80,
+            count: 8,
             dice: []
         }
     }
@@ -24,6 +24,7 @@ class DiceBox extends React.Component {
         return (
             <div>
                 <h1>Dice:</h1>
+                {/* <p></p> */}
                 <button
                     style={{
                     padding: "15px 30px",
