@@ -1,0 +1,23 @@
+.die{
+    display: grid;
+    width: 100px;
+    height: 100px;
+    grid: auto-flow / 1fr 1fr 1fr;
+    background-color: white;
+    box-shadow: -8px -8px 2px 1px black inset;
+    border-radius: 18% 26%;
+    padding: 22px 28px 28px 22px;
+}
+
+.circle{
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+
