@@ -1,0 +1,55 @@
+.form-traveler {
+    display: grid;
+    grid-gap: 8px;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    grid-template-columns: 3fr 1fr 3fr 3fr 4fr;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    " . gender fname lname ." 
+    " . age loc diet ."
+    " . . . diet .";
+
+}
+.fname {
+    grid-area: fname;
+}
+.lname {
+    grid-area: lname;
+}
+.age {
+    grid-area: age;
+}
+.age > input {
+    width: 50px;
+}
+.gender{
+    grid-area: gender;
+}
+.location{
+    grid-area: loc;
+}
+.diet{
+    grid-area: diet;
+    border: 1px solid burlywood;
+    border-radius: 9px;
+    padding: 10px;
+}
+
+
+.form-traveler input, select {
+    border: 1px solid transparent;
+    border-bottom: 1px solid burlywood;
+    background-color: transparent;  
+    overflow: hidden;  
+}
+
+.form-traveler button {
+    border: 1px solid burlywood;
+    background-color: transparent;
+    cursor: pointer;
+}
+.button-checked {
+    background-color: burlywood;
+}

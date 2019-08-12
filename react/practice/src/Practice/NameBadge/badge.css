@@ -1,0 +1,43 @@
+body {
+    background-color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+.badge-head{
+    background-color: grey;
+    color: white;
+    font-size: 35pt;
+    border-radius: 10px 10px 0 0;
+    padding: 8px 0 2px 0;
+}
+.badge-head > p {
+    font-size: 10pt;
+}
+
+.badge-body{
+    padding: 10px 50px;
+
+}
+
+.badge {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 60%;
+}
+.col {
+    display: inline-block;
+    width: 40%;
+    margin: 3%;
+    padding: 10px;
+}
+
+.description{
+    border: 2px solid black;
+    text-align: left;
+    padding: 5px;
+    height: 120px;
+}
