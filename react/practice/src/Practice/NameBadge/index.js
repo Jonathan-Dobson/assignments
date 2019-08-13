@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-// import Badge from './Badge'
+import Badge from './Badge'
 import './form.css'
+import InputMap from './InputMap'
 
 class NameBadge extends Component {
     constructor(props) {
@@ -14,65 +15,87 @@ class NameBadge extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
+        this.setState(prev=>{
+            let newBadge = {}
+            let clearInput = {}
+
+            for(var input in prev.inputData){
+                newBadge[input] = prev.inputData[input]
+                clearInput[input] = ''
+            }
+            return {
+                inputData: clearInput,
+                badges: [{ ...newBadge},...prev.badges],
+                submitReady: false
+            }
+        })
     }
 
     handleChange = (event) => {
         const {name, value} = event.target
         this.setState(prev => {
-            prev.inputData[name] = value
+            prev.inputData[name] = name !=='phone'
+                ? value
+                : value.replace(/\D/gi,'')
+
             return {inputData: prev.inputData}
-        },() => { 
-                    let longEnough = true
-                    let inputsRequired = 7
-                    for(var prop in this.state.inputData){
-                        inputsRequired--
-                        longEnough = this.state.inputData[prop].length < 3 
-                            ? false
-                            : longEnough
-                    }
-                    this.setState({submitReady: (
-                        inputsRequired
-                            ? false
-                            : longEnough
-                                ? true
-                                : false
-                    )})
-
-                }
+        },
+        () => { 
+            // When setState has completed, evaluate requirements to enable submit button
+            let longEnough = true
+            let inputsRequired = 7
+            for(var prop in this.state.inputData){
+                inputsRequired--;
+                longEnough = this.state.inputData[prop].length < 3 
+                    ? false
+                    : longEnough
+            }
+            this.setState({submitReady: (
+                inputsRequired <= 0
+                    ? longEnough
+                        ? true
+                        : false
+                    : false
+            )})
+        }
         )
-
     }
+
+    inputArr = [{
+        title: 'First Name', name: 'fn',},
+        { title: 'Last Name',name: 'ln',},
+        { title: 'Email', name: 'email',},
+        { title: 'Place of Birth', name: 'birthPlace',},
+        { title: 'Phone Number', name: 'phone',},
+        { title: 'Favorite Food', name: 'favFood',
+    }]
+
+    Badges = (props) => props.list.map((badge,index)=> 
+        <Badge key={Math.floor(Math.random()*100)} badge={badge}/>)
 
     render() {
         return (
-            <form
-                className='form-name-badge'
-                onChange={this.handleChange}
-                onSubmit={this.handleSubmit}>
-                <input className='fn' type="text" name='fn' 
-                    placeholder='First Name'/>
-                <input className='ln' type="text" name='ln' 
-                    placeholder='Last Name'/>
-                <input className='em' type="text" name='email' 
-                    placeholder='Email'/>
-                <input
-                    className='birth'
-                    type="text"
-                    name='birthPlace'
-                    placeholder='Place of Birth'/>
-                <input className='ph' type="text" name='phone' 
-                    placeholder='Phone'/>
-                <input className='food' type="text" name='favFood' 
-                    placeholder='Favorite Food'/>
-                <textarea
-                    className="desc"
-                    name='description'
-                    placeholder='Tell us about yourself'/>
-                <button className='submit' disabled={!this.state.submitReady}>Submit</button>
-                <div>{this.state.inputData.fn}</div>
-                <div>{this.state.inputData.ln}</div>
+            <div>
+                <form className='form-name-badge'
+                    onSubmit={this.handleSubmit}>
+                    <InputMap inputs={this.inputArr} 
+                        changeHandler={this.handleChange.bind(this)}
+                        inputData={this.state.inputData} />
+                    <textarea className="description" name='description'
+                        onChange={this.handleChange}
+                        value={this.state.inputData.description}
+                        placeholder='Tell us about yourself' />
+                    <button className='submit' disabled={!this.state.submitReady}>Submit</button>
+                </form>
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexWrap: 'wrap'
+                }}>
 
-            </form>
+                <this.Badges list={this.state.badges}/>
+                </div>
+            </div>
         );
     }
 }

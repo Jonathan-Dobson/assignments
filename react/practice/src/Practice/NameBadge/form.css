@@ -23,19 +23,19 @@
 .ln{
     grid-column: 2;
 }
-.em{
+.email{
     grid-column: 1;
 }
-.birth{
+.birthPlace{
     grid-column: 2;
 }
-.ph{
+.phone{
     grid-column: 1;
 }
-.food{
+.favFood{
     grid-column: 2;
 }
-.desc{
+.description{
     grid-column: 1 / 3;
 }
 .submit{
