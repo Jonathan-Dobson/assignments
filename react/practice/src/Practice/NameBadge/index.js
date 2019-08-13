@@ -8,7 +8,7 @@ class NameBadge extends Component {
         this.state = {
             inputData: {},
             badges: [],
-            submitReady: true
+            submitReady: false
         }
     }
 
@@ -21,18 +21,27 @@ class NameBadge extends Component {
         this.setState(prev => {
             prev.inputData[name] = value
             return {inputData: prev.inputData}
-        },
-            () => { 
-                return console.log(this.isLongEnough(value));
-            }
+        },() => { 
+                    let longEnough = true
+                    let inputsRequired = 7
+                    for(var prop in this.state.inputData){
+                        inputsRequired--
+                        longEnough = this.state.inputData[prop].length < 3 
+                            ? false
+                            : longEnough
+                    }
+                    this.setState({submitReady: (
+                        inputsRequired
+                            ? false
+                            : longEnough
+                                ? true
+                                : false
+                    )})
+
+                }
         )
 
     }
-
-    hasAllRequiredFields = (required = 5) => Object
-        .keys(this.state)
-        .length >= required
-    isLongEnough = (str) => str.length >= 3
 
     render() {
         return (
