@@ -3,6 +3,17 @@ import Badge from './Badge'
 import './form.css'
 import InputMap from './InputMap'
 
+const colors = {
+    red: '#EC1314',
+    orange: '#FA5E11',
+    yellow: '#D89C23',
+    green: '#79C107',
+    blue: '#32A5FA',
+    teal: '#14C5D4'
+}
+const colorValues = Object.values(colors)
+
+
 class NameBadge extends Component {
     constructor(props) {
         super(props);
@@ -15,8 +26,10 @@ class NameBadge extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
+        let color = colorValues[ this.state.badges.length % colorValues.length ]
+        
         this.setState(prev=>{
-            let newBadge = {}
+            let newBadge = {color: color}
             let clearInput = {}
 
             for(var input in prev.inputData){
@@ -70,8 +83,8 @@ class NameBadge extends Component {
         { title: 'Favorite Food', name: 'favFood',
     }]
 
-    Badges = (props) => props.list.map((badge,index)=> 
-        <Badge key={Math.floor(Math.random()*100)} badge={badge}/>)
+    // Badges = (props) => props.list.map((badge,index)=> 
+    //     <Badge key={Math.floor(Math.random()*100*index)} badge={badge} />)
 
     render() {
         return (
@@ -93,7 +106,9 @@ class NameBadge extends Component {
                     flexWrap: 'wrap'
                 }}>
 
-                <this.Badges list={this.state.badges}/>
+                {/* <this.Badges list={this.state.badges}/> */}
+                {this.state.badges.map((badge,index)=>
+                    <Badge key={Math.floor(Math.random()*100*index)} badge={badge} />)}
                 </div>
             </div>
         );

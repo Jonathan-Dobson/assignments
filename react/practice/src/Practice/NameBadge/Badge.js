@@ -2,7 +2,9 @@ import React from 'react';
 import './badge.css'
 
 export default (props) => <div className='badge'>
-    <div className="badge-head">HELLO
+    <div style={{
+        backgroundColor: props.badge.color
+    }} className="badge-head">HELLO
         <p>my name is</p>
     </div>
     <div className="badge-body">
