@@ -22,7 +22,6 @@ code {
   align-items: center;
 }
 .summary{
-  border: 1px solid red;
   font-size: 20pt;
   text-align: center;
 }
@@ -35,18 +34,14 @@ code {
   margin: 10px;
 }
 .temp{
-  border: 1px solid blue;
   font-size: 26pt;
 }
 .location{
-  border: 1px solid green;
   font-size: 22pt;
 }
 .change-location{
-  border: 1px solid orangered;
 }
 .week-forecast{
-  border: 1px solid violet;
 }
 .week-forecast{
   font-size: 14pt;
