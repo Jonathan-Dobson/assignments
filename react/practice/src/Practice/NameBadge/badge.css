@@ -15,7 +15,7 @@ body {
     background-color: grey;
     color: white;
     font-size: 35pt;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
     padding: 8px 0 2px 0;
 }
 .badge-head > p {
@@ -29,10 +29,10 @@ body {
 
 .badge {
     display: block;
-    margin: 0;
+    margin: 20px;
     border: 2px solid black;
-    border-radius: 12px;
-    width: 60%;
+    border-radius: 22px;
+    width: 40%;
     text-align: center;
 }
 .col {

@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 export default () => 
   <div className="App" style={{
     justifyContent: "center",

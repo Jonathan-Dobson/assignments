@@ -74,17 +74,13 @@ class NameBadge extends Component {
         )
     }
 
-    inputArr = [{
-        title: 'First Name', name: 'fn',},
+    inputArr = [
+        { title: 'First Name', name: 'fn',},
         { title: 'Last Name',name: 'ln',},
         { title: 'Email', name: 'email',},
         { title: 'Place of Birth', name: 'birthPlace',},
         { title: 'Phone Number', name: 'phone',},
-        { title: 'Favorite Food', name: 'favFood',
-    }]
-
-    // Badges = (props) => props.list.map((badge,index)=> 
-    //     <Badge key={Math.floor(Math.random()*100*index)} badge={badge} />)
+        { title: 'Favorite Food', name: 'favFood'}]
 
     render() {
         return (
@@ -105,8 +101,6 @@ class NameBadge extends Component {
                     justifyContent: 'center',
                     flexWrap: 'wrap'
                 }}>
-
-                {/* <this.Badges list={this.state.badges}/> */}
                 {this.state.badges.map((badge,index)=>
                     <Badge key={Math.floor(Math.random()*100*index)} badge={badge} />)}
                 </div>
