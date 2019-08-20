@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {darkSkyKey} from '../config.js'
+import {darkSkyKey} from '../config/apiKey'
 
 export default (lat,lng) => new Promise((resolve, reject)=>{
     axios.get(`https://vschool-cors.herokuapp.com?url=https://api.darksky.net/forecast/${darkSkyKey}/${lat},${lng}`)
