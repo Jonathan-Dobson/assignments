@@ -10,21 +10,66 @@
       <stop offset="0" style="stop-color: rgba(235, 235, 235, 1)"/>
       <stop offset="1" style="stop-color: rgba(184, 184, 184, 1)"/>
     </linearGradient>
+    <linearGradient id="gradient-3" gradientUnits="userSpaceOnUse" x1="314.266" y1="444.818" x2="314.266" y2="444.818" gradientTransform="matrix(NaN, NaN, NaN, NaN, NaN, NaN)">
+      <stop offset="0" style="stop-color: rgba(235, 235, 235, 1)"/>
+      <stop offset="1" style="stop-color: rgba(184, 184, 184, 1)"/>
+    </linearGradient>
+    <linearGradient id="gradient-4" gradientUnits="userSpaceOnUse" x1="314.266" y1="444.818" x2="314.266" y2="444.818" gradientTransform="matrix(NaN, NaN, NaN, NaN, NaN, NaN)">
+      <stop offset="0" style="stop-color: rgba(235, 235, 235, 1)"/>
+      <stop offset="1" style="stop-color: rgba(184, 184, 184, 1)"/>
+    </linearGradient>
   </defs>
-  <rect x="10.767" y="16.823" width="284.657" height="438.089" style="fill: rgb(216, 216, 216);"/>
-  <rect x="26.226" y="32.301" width="253.028" height="372.14" style="fill: rgb(255, 255, 255);"/>
-  <circle style="fill: rgb(236, 236, 236);" cx="150.067" cy="427.995" r="16.661"/>
-  <path d="M 297.307 290.011 H 304.882 L 304.882 279.372 L 333.805 293.558 L 304.882 307.744 L 304.882 297.104 H 297.307 V 290.011 Z" style="fill: rgb(239, 239, 239);" transform="matrix(-0.999911, 0.013332, -0.013332, -0.999911, 398.849243, 719.338196)" bx:shape="arrow 297.307 279.372 36.498 28.372 7.093 28.923 0 1@8cc1e424"/>
-  <line style="stroke: rgb(240, 240, 240);" x1="213.997" y1="417.227" x2="248.317" y2="417.227"/>
-  <line style="stroke: rgb(235, 235, 235);" x1="214.67" y1="428.667" x2="248.99" y2="428.667"/>
-  <line style="fill: url(#gradient-1); stroke: rgb(240, 240, 240);" x1="214.67" y1="441.453" x2="249.663" y2="441.453"/>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.773097, 0, 0, 0.769838, -86.880997, -9.955129)">78°</text>
-  <text x="118.175" y="148.988" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 13.2px;">now in Salt Lake City</text>
-  <text x="180.35" y="283.311" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.485907, 0, 0, 0.366213, 17.049442, 64.171669)">change location...<tspan x="180.35000610351562" dy="1em">​</tspan></text>
-  <rect x="50.471" y="329.744" width="206.595" height="49.798" style="fill: rgb(216, 216, 216);"/>
-  <text x="151.413" y="355.989" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.809179, 0, 0, 0.72578, -56.909698, 105.212433)">View Today's Weather<tspan x="151.41299438476562" dy="1em">​</tspan></text>
-  <text x="159.489" y="82.1" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px; text-anchor: middle;" transform="matrix(0.576841, 0, 0, 0.700778, 58.417419, 8.47376)">Mixed precipitation throughout <tspan x="159.48899841308594" dy="1em">​</tspan>the week, with temperatures <tspan x="159.48899841308594" dy="1em">​</tspan>falling to 71°F on Sunday.<tspan x="159.48899841308594" dy="1em">​</tspan></text>
-  <g transform="matrix(1, 0, 0, 1, 489.656525, -8.463271)">
+  <g transform="matrix(1, 0, 0, 1, 491.332611, 8.125677)">
+    <rect x="10.767" y="16.823" width="284.657" height="438.089" style="fill: rgb(216, 216, 216);"/>
+    <rect x="26.226" y="32.301" width="253.028" height="372.14" style="fill: rgb(255, 255, 255);"/>
+    <circle style="fill: rgb(236, 236, 236);" cx="150.067" cy="427.995" r="16.661"/>
+    <path d="M 297.307 290.011 H 304.882 L 304.882 279.372 L 333.805 293.558 L 304.882 307.744 L 304.882 297.104 H 297.307 V 290.011 Z" style="fill: rgb(239, 239, 239);" transform="matrix(-0.999911, 0.013332, -0.013332, -0.999911, 398.849243, 719.338196)" bx:shape="arrow 297.307 279.372 36.498 28.372 7.093 28.923 0 1@8cc1e424"/>
+    <line style="stroke: rgb(240, 240, 240);" x1="213.997" y1="417.227" x2="248.317" y2="417.227"/>
+    <line style="stroke: rgb(235, 235, 235);" x1="214.67" y1="428.667" x2="248.99" y2="428.667"/>
+    <line style="fill: url(#gradient-1); stroke: rgb(240, 240, 240);" x1="214.67" y1="441.453" x2="249.663" y2="441.453"/>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.773097, 0, 0, 0.769838, -86.880997, -9.955129)">78°</text>
+    <text x="118.175" y="148.988" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 13.2px;">now in Salt Lake City</text>
+    <text x="180.35" y="283.311" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.485907, 0, 0, 0.366213, 17.049442, 64.171669)">change location...<tspan x="180.35000610351562" dy="1em">​</tspan></text>
+    <rect x="50.471" y="329.744" width="206.595" height="49.798" style="fill: rgb(216, 216, 216);"/>
+    <text x="151.413" y="355.989" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.809179, 0, 0, 0.72578, -56.909698, 105.212433)">View Today's Weather<tspan x="151.41299438476562" dy="1em">​</tspan></text>
+    <text x="159.489" y="82.1" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px; text-anchor: middle;" transform="matrix(0.576841, 0, 0, 0.700778, 58.417419, 8.47376)">Mixed precipitation throughout <tspan x="159.48899841308594" dy="1em">​</tspan>the week, with temperatures <tspan x="159.48899841308594" dy="1em">​</tspan>falling to 71°F on Sunday.<tspan x="159.48899841308594" dy="1em">​</tspan></text>
+    <rect x="34.645" y="213.018" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
+    <rect x="68.669" y="213.313" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, -79.107147, 121.962143)">78°</text>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, -79.039833, 196.011246)">65°</text>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, -42.966793, 122.682182)">79°</text>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, -42.899479, 196.731293)">66°</text>
+    <rect x="102.788" y="213.955" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
+    <rect x="136.812" y="214.25" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, -10.964622, 122.899414)">80°</text>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, -10.897307, 196.948517)">69°</text>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 25.175734, 123.619453)">81°</text>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 25.24305, 197.668564)">69°</text>
+    <rect x="171.413" y="213.458" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
+    <rect x="205.437" y="213.753" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 57.660919, 122.402161)">78°</text>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 57.728233, 196.451263)">65°</text>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 93.801277, 123.1222)">75°</text>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 93.868591, 197.17131)">62°</text>
+    <rect x="239.144" y="213.393" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 127.508499, 122.762199)">71°</text>
+    <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 127.575813, 196.81131)">60°</text>
+    <rect x="69.086" y="241.601" width="28.994" height="34.791" style="fill: rgb(177, 177, 177);"/>
+    <rect x="34.279" y="245.579" width="28.994" height="33.797" style="fill: rgb(177, 177, 177);"/>
+    <rect x="102.899" y="238.618" width="28.994" height="33.299" style="fill: rgb(177, 177, 177);"/>
+    <rect x="137.214" y="234.142" width="28.994" height="38.272" style="fill: rgb(177, 177, 177);"/>
+    <rect x="171.016" y="239.612" width="28.994" height="37.775" style="fill: rgb(177, 177, 177);"/>
+    <rect x="205.829" y="245.579" width="28.994" height="35.786" style="fill: rgb(177, 177, 177);"/>
+    <rect x="239.139" y="250.552" width="28.994" height="36.78" style="fill: rgb(177, 177, 177);"/>
+    <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 3.39529, 99.80616)">M</text>
+    <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 41.412037, 101.239563)">T</text>
+    <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 70.257843, 101.223045)">W</text>
+    <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 109.043083, 101.223038)">T</text>
+    <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 143.369614, 101.267097)">F</text>
+    <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 176.696152, 101.764343)">S</text>
+    <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 211.011673, 101.256081)">S</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 712.841797, 6.162948)">
     <rect x="92.867" y="20.188" width="284.657" height="438.089" style="fill: rgb(216, 216, 216);"/>
     <rect x="108.326" y="35.666" width="253.028" height="372.14" style="fill: rgb(255, 255, 255);"/>
     <circle style="fill: rgb(236, 236, 236);" cx="232.167" cy="431.36" r="16.661"/>
@@ -39,39 +84,34 @@
     <text x="151.413" y="355.989" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.809179, 0, 0, 0.72578, 33.473919, 108.577171)">View 7 day Forecast<tspan x="151.41299438476562" dy="1em">​</tspan></text>
     <text x="159.489" y="82.1" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px; text-anchor: middle;" transform="matrix(0.576841, 0, 0, 0.700778, 141.511505, 36.700829)">Rain starting later this afternoon, <tspan x="159.48899841308594" dy="1em">​</tspan>continuing until this evening.</text>
   </g>
-  <rect x="34.645" y="213.018" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
-  <rect x="68.669" y="213.313" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, -79.107147, 121.962143)">78°</text>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, -79.039833, 196.011246)">65°</text>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, -42.966793, 122.682182)">79°</text>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, -42.899479, 196.731293)">66°</text>
-  <rect x="102.788" y="213.955" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
-  <rect x="136.812" y="214.25" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, -10.964622, 122.899414)">80°</text>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, -10.897307, 196.948517)">69°</text>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 25.175734, 123.619453)">81°</text>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 25.24305, 197.668564)">69°</text>
-  <rect x="171.413" y="213.458" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
-  <rect x="205.437" y="213.753" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 57.660919, 122.402161)">78°</text>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 57.728233, 196.451263)">65°</text>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 93.801277, 123.1222)">75°</text>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 93.868591, 197.17131)">62°</text>
-  <rect x="239.144" y="213.393" width="28.994" height="96.45" style="fill: rgb(216, 216, 216);"/>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 127.508499, 122.762199)">71°</text>
-  <text x="224.091" y="205.922" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.525379, 0, 0, 0.523165, 127.575813, 196.81131)">60°</text>
-  <rect x="69.086" y="241.601" width="28.994" height="34.791" style="fill: rgb(177, 177, 177);"/>
-  <rect x="34.279" y="245.579" width="28.994" height="33.797" style="fill: rgb(177, 177, 177);"/>
-  <rect x="102.899" y="238.618" width="28.994" height="33.299" style="fill: rgb(177, 177, 177);"/>
-  <rect x="137.214" y="234.142" width="28.994" height="38.272" style="fill: rgb(177, 177, 177);"/>
-  <rect x="171.016" y="239.612" width="28.994" height="37.775" style="fill: rgb(177, 177, 177);"/>
-  <rect x="205.829" y="245.579" width="28.994" height="35.786" style="fill: rgb(177, 177, 177);"/>
-  <rect x="239.139" y="250.552" width="28.994" height="36.78" style="fill: rgb(177, 177, 177);"/>
-  <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 3.39529, 99.80616)">M</text>
-  <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 41.412037, 101.239563)">T</text>
-  <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 70.257843, 101.223045)">W</text>
-  <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 109.043083, 101.223038)">T</text>
-  <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 143.369614, 101.267097)">F</text>
-  <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 176.696152, 101.764343)">S</text>
-  <text x="40.819" y="202.31" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.892305, 0, 0, 0.530054, 211.011673, 101.256081)">S</text>
+  <g>
+    <rect x="19.102" y="20.392" width="284.657" height="438.089" style="fill: rgb(216, 216, 216);"/>
+    <rect x="34.561" y="35.87" width="253.028" height="372.14" style="fill: rgb(255, 255, 255);"/>
+    <circle style="fill: rgb(236, 236, 236);" cx="158.402" cy="431.564" r="16.661"/>
+    <path d="M 297.307 290.011 H 304.882 L 304.882 279.372 L 333.805 293.558 L 304.882 307.744 L 304.882 297.104 H 297.307 V 290.011 Z" style="fill: rgb(239, 239, 239);" transform="matrix(-0.999911, 0.013332, -0.013332, -0.999911, 407.183868, 722.907349)" bx:shape="arrow 297.307 279.372 36.498 28.372 7.093 28.923 0 1@8cc1e424"/>
+    <line style="stroke: rgb(240, 240, 240);" x1="222.332" y1="420.796" x2="256.652" y2="420.796"/>
+    <line style="stroke: rgb(235, 235, 235);" x1="223.005" y1="432.236" x2="257.325" y2="432.236"/>
+    <line style="stroke: rgb(240, 240, 240); fill: url(#gradient-3);" x1="223.005" y1="445.022" x2="257.998" y2="445.022"/>
+    <rect x="58.806" y="333.313" width="206.595" height="49.798" style="fill: rgb(216, 216, 216);"/>
+    <text x="151.413" y="355.989" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.809179, 0, 0, 0.72578, -48.575081, 108.78157)">&lt; Back</text>
+    <rect x="58.675" y="170.616" width="206.595" height="49.798" style="fill: rgb(216, 216, 216);"/>
+    <text x="69.339" y="123.51" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(1, 0, 0, 1, 28.710726, 80.173347)">Auto Detect<tspan x="69.33899688720703" dy="1em">​</tspan></text>
+    <text x="74.215" y="66.631" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(1, 0, 0, 1, -15.70964, 14.084506)">Change Location: <tspan x="74.21499633789062" dy="1em">​</tspan>How do you want to <tspan x="74.21499633789062" dy="1em">​</tspan>select your location?</text>
+    <rect x="56.966" y="250.789" width="206.595" height="49.798" style="fill: rgb(216, 216, 216);"/>
+    <text x="77.465" y="284.941" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;">Manually Select</text>
+  </g>
+  <rect x="1133.301" y="25.464" width="284.657" height="438.089" style="fill: rgb(216, 216, 216);"/>
+  <rect x="1148.76" y="40.942" width="253.028" height="372.14" style="fill: rgb(255, 255, 255);"/>
+  <circle style="fill: rgb(236, 236, 236);" cx="1272.601" cy="436.636" r="16.661"/>
+  <path d="M 297.307 290.011 H 304.882 L 304.882 279.372 L 333.805 293.558 L 304.882 307.744 L 304.882 297.104 H 297.307 V 290.011 Z" style="fill: rgb(239, 239, 239);" transform="matrix(-0.999911, 0.013332, -0.013332, -0.999911, 1521.382935, 727.979675)" bx:shape="arrow 297.307 279.372 36.498 28.372 7.093 28.923 0 1@8cc1e424"/>
+  <line style="stroke: rgb(240, 240, 240);" x1="1336.531" y1="425.868" x2="1370.851" y2="425.868"/>
+  <line style="stroke: rgb(235, 235, 235);" x1="1337.204" y1="437.308" x2="1371.524" y2="437.308"/>
+  <line style="stroke: rgb(240, 240, 240); fill: url(#gradient-4);" x1="1337.204" y1="450.094" x2="1372.197" y2="450.094"/>
+  <rect x="1173.005" y="338.385" width="206.595" height="49.798" style="fill: rgb(216, 216, 216);"/>
+  <text x="151.413" y="355.989" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(0.809179, 0, 0, 0.72578, 1065.624023, 113.853867)">&lt; Back</text>
+  <rect x="1172.874" y="175.688" width="206.595" height="49.798" style="fill: rgb(216, 216, 216);"/>
+  <text x="69.339" y="123.51" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(1, 0, 0, 1, 1144.2323, 87.890724)">Auto Detect<tspan x="69.33899688720703" dy="1em">​</tspan></text>
+  <text x="74.215" y="66.631" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;" transform="matrix(1, 0, 0, 1, 1098.489502, 19.156803)">Change Location: <tspan x="74.21499633789062" dy="1em">​</tspan>How do you want to <tspan x="74.21499633789062" dy="1em">​</tspan>select your location?</text>
+  <rect x="1171.165" y="255.861" width="206.595" height="49.798" style="fill: rgb(216, 216, 216);"/>
+  <text x="1198.277" y="293.981" style="white-space: pre; fill: rgb(51, 51, 51); font-family: Oswald; font-size: 28px;">Manual Select</text>
 </svg>
