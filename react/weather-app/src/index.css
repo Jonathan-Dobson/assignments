@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -16,13 +19,14 @@ code {
 .container{
   display: flex;
   margin: 30px;
-  height: 90vh;
+  height: 100%;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
+
 .summary{
-  font-size: 20pt;
+  font-size: 16pt;
   text-align: center;
 }
 .current-conditions{
@@ -41,10 +45,44 @@ code {
   text-align: center;
 }
 
-.week-forecast{
+.button{
   font-size: 14pt;
+  width: 100%;
   text-transform: uppercase;
   background-color: #9aebae;
   padding: 14px;
 }
 
+.weekly-container{
+  display: flex;
+}
+.weekly-container {
+  margin: 40px;
+  padding: 0;
+}
+.weekly-container > span {
+  margin: 2px;
+  list-style: none;
+  /* background-color: rgb(192, 192, 229); */
+  width: 30px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.weekly-container > span > span {
+  height: 25px;
+  background-color: white;
+}
+
+.weekly-container > span > span:nth-child(1) {
+  height: 25px;
+  background-color: white;
+}
+.weekly-container > span > span:nth-child(2) {
+  background-color: white;
+  height: 50px;
+}
+           

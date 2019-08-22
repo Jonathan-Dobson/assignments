@@ -1,8 +1,8 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom'
-import Daily from './Daily'
-import Weekly from './Weekly'
-import ChangeLocation from './ChangeLocation'
+import Daily from './MainComponents/Daily'
+import Weekly from './MainComponents/Weekly'
+import ChangeLocation from './MainComponents/ChangeLocation'
 
 function App() {
   return (
