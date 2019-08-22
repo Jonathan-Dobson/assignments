@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import WeatherProvider from './WeatherProvider'
 import {BrowserRouter} from 'react-router-dom'
+import './mustard-ui.min.css'
 
 import './index.css';
 import App from './App';

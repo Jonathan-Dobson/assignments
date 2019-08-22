@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 const Daily = (props) => {
 
 return(<>
-    <p>Daily Weather</p>
+    <p>Today</p>
     <div className="summary">{props.daySummary}</div>
     <div className="current-conditions">
         <Temp />

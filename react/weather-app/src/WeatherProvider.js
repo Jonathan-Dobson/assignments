@@ -8,7 +8,7 @@ class WeatherProvider extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
-            temp: '55',
+            temp: '.',
             city: '.',
             state: '.',
             country: '.',
@@ -17,16 +17,20 @@ class WeatherProvider extends React.Component {
             lng: -83.3,
             daySummary: '.',
             weekSummary: '.',
-            forecast: {
-                day1: {highTemp:77},
-                day2: {highTemp:76},
-                day3: {highTemp:75},
-                day4: {highTemp:74},
-                day5: {highTemp:73},
-                day6: {highTemp:72},
-                day7: {highTemp:71},
-                day8: {highTemp:70},
-            },
+            data: {
+                daily: {
+                    summary: "weekly summary...",
+                    data: [
+                        {time: 1566446400, temperatureHigh: 33, temperatureLow: 2},
+                        {time: 1566546400, temperatureHigh: 35, temperatureLow: 4},
+                        {time: 1566646400, temperatureHigh: 36, temperatureLow: 6},
+                        {time: 1566746400, temperatureHigh: 37, temperatureLow: 8},
+                        {time: 1566846400, temperatureHigh: 38, temperatureLow: 9},
+                        {time: 1566946400, temperatureHigh: 39, temperatureLow: 1},
+                        {time: 1566346400, temperatureHigh: 39, temperatureLow: 1},
+                    ]
+                }
+            }
          }
     }
 

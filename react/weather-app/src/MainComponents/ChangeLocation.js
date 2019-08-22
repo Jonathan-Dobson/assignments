@@ -5,7 +5,7 @@ import { WithWeather } from '../WeatherProvider';
 const ChangeLocation = (props) => {
     return(
         <>
-            <h1>Set Location</h1>
+            <p>Set Location</p>
             <button 
                 className="button" 
                 onClick={ ()=>{
