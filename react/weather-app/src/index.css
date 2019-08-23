@@ -16,6 +16,7 @@ body {
 }
 
 .summary{
+  margin: 20px;
   font-size: 16pt;
   text-align: center;
 }
@@ -35,7 +36,7 @@ body {
   text-align: center;
 }
 .change-location{
-  margin: 40px;
+  margin: 20px;
 }
 
 .button{
@@ -46,7 +47,7 @@ body {
   display: flex;
 }
 .weekly-container {
-  margin: 40px;
+  margin: 20px;
   padding: 0;
 }
 .weekly-container > span {

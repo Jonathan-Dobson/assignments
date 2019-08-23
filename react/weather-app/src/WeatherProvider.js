@@ -1,22 +1,22 @@
 import React from 'react';
-import detectLocation from './GlobalMethods/detectLocation'
+import locationDetector from './GlobalMethods/detectLocation'
 import getCity from './GlobalMethods/getCityFromCoordinates'
-// import getWeather from './GlobalMethods/getWeatherFromDarkSky'
+import getWeather from './GlobalMethods/getWeatherFromDarkSky'
 const {Provider, Consumer} = React.createContext()
 
 class WeatherProvider extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
-            temp: '.',
-            city: '.',
+            temp: '23',
+            city: 'loading',
             state: '.',
             country: '.',
             accuracy: '',
             lat: 42.5,
             lng: -83.3,
-            daySummary: '.',
-            weekSummary: '.',
+            daySummary: 'hot today.',
+            weekSummary: 'cold this week.',
             data: {
                 daily: {
                     summary: "weekly summary...",
@@ -37,27 +37,33 @@ class WeatherProvider extends React.Component {
     componentDidMount(){
         const {lat,lng} = this.state
         getCity(lat,lng).then(res=>this.setState(res))
-        // getWeather(lat,lng).then(res=>this.setState(res))
+        getWeather(lat,lng).then(res=>this.setState(res))
     }
 
-    setLocation = () => {
-        detectLocation()
+    detectLocation = () => {
+        locationDetector()
             .then(({lat,lng})=>{
             this.setState(
                 {lat,lng},
                 ()=>getCity(this.state.lat,this.state.lng)
                     .then(res=>this.setState(
                         res,
-                        // ()=>getWeather(lat,lng).then(res=>this.setState(res))
+                        ()=>getWeather(lat,lng).then(res=>this.setState(res))
                     ))
             )
         })
+    }
+
+    setLocation = (location) => {
+        console.log('set loc');
+        this.setState(location,()=>getWeather(this.state.lat,this.state.lng).then(res=>this.setState(res)))
     }
 
     render() { 
         return ( 
             <Provider value={{
                 ...this.state,
+                detectLocation: this.detectLocation,
                 setLocation: this.setLocation
             }}> 
                 {this.props.children}

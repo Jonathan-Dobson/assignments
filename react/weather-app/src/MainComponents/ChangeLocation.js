@@ -9,11 +9,12 @@ const ChangeLocation = (props) => {
             <button 
                 className="button" 
                 onClick={ ()=>{
-                    props.setLocation()
+                    props.detectLocation()
                     props.history.push('/')
                 } }>Automatically</button>
             <button 
-                className="button">Manually set</button>
+                className="button"
+                onClick={ ()=>props.history.push('/manuallySet')}>Manually set</button>
             <button 
                 className="button" 
                 onClick={ ()=>props.history.push('/') }>Cancel
