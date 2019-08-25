@@ -1,19 +1,13 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom'
-import Daily from './MainComponents/Daily'
-import Weekly from './MainComponents/Weekly'
-import Home from './MainComponents/Home'
-import manuallySet from './MainComponents/manuallySet'
+import {Route, Switch} from 'react-router-dom';
+import Landing from './Pages/Landing'
+
 
 function App() {
   return (
     <div className="container">
       <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/daily' component={Daily} />
-        <Route path='/weekly' component={Weekly} />
-        <Route path='/changeLocation' component={Home} />
-        <Route path='/setLocation' component={manuallySet} />
+        <Route exact path='/' component={Landing} />
       </Switch>
     </div>
   );
