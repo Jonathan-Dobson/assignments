@@ -43,7 +43,16 @@ body {
 
 .button{
   text-transform: uppercase;
-  background-color: rgb(202, 203, 235);
+  color: white;
+  border-color: #9A2CAF;
+  background-color: #9A2CAF;
+  /* background-color: rgb(202, 203, 235); */
+}
+.button:disabled{
+  background-color: rgb(154, 44, 175, 0.4);
+}
+.button:disabled:hover{
+  transform: translate(0)
 }
 
 .weekly-container{

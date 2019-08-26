@@ -13,9 +13,20 @@ app.get('/locate', (req, res) => {
 })
 
 app.get('/search/:string', (req, res) => {
-
+    
     let found = data.filter(city=>city[0].match(new RegExp(req.params.string,'i')))
-    res.json(searchCities(found))
+    
+
+    
+    const length = req.params.string.length
+    let byFirstOccurrence = found.reduce((acc,city)=> 
+    city[0].slice(0,length).match(new RegExp(req.params.string,'i'))
+        ? [...acc,city] : [city,...acc] , [] )
+
+    let USFirst = byFirstOccurrence.reduce((acc,city)=>city[3]==="US"
+    ? [city,...acc] : [...acc,city] , [] )
+
+    res.json(searchCities(USFirst))
 })
 
 function searchCities(query){

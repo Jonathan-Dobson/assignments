@@ -1,7 +1,7 @@
 import React from 'react';
-import { WithWeather } from '../../WeatherProvider';
+import { WithState } from '../../StateProvider';
 
 const City = ({city,state,country}) => 
     <div className="location"> {city} {state}, {country}</div>
 
-export default WithWeather(City)
+export default WithState(City)
