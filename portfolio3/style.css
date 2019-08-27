@@ -9,16 +9,25 @@ body{
     text-align: center;
     color: var(--black);
 }
+@media only screen and (min-width: 1024px) {
+    main {
+      background-color: rgb(248, 246, 244);
+      margin: 0 140px;
+    }
+  }
 
 a{
     text-decoration: none;
-    color: var(--black);
+    /* color: var(--black); */
 }
 p{
     line-height: 30px;
 }
+hr{
+    width: 20%;
+}
 nav{
-    height: 100vh;
+    height: 80vh;
 }
 .scroll-to-top {
     position: sticky;
@@ -27,8 +36,8 @@ nav{
 }
 .scroll-to-top > a{
     font-size: 20pt;
-    color: rgb(0, 0, 0, 0.4);
-    background-color: rgb(128, 128, 128, 0.1);
+    color: rgba(11, 0, 107, 0.8);
+    background-color: rgba(212, 208, 172, 0.5);
     border-radius: 40px;
     padding: 10px;
     position: absolute;
@@ -52,4 +61,17 @@ nav{
 
 main > section{
     padding: 50px 1vw;
+}
+
+.resume-container{
+    /* padding: 80px; */
+    padding-left: 20px;
+    text-align: left;
+    background-color: rgb(246, 246, 240);
+}
+.resume-container > article {
+    margin: 10px 0px 10px 2hw;
+}
+.resume-container b {
+    margin: 10px 0px 10px -20px;
 }
