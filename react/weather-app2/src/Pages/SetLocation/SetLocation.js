@@ -1,9 +1,9 @@
 import React from 'react';
-import { WithState } from '../StateProvider';
+import { WithState } from '../../StateProvider';
 import axios from 'axios'
-import SearchResults from './SetLocation/SearchResults'
-import DetectingModal from './SetLocation/DetectingModal'
-import DetectedConfirmModal from './SetLocation/DetectedConfirmModal'
+import SearchResults from './SearchResults'
+import DetectingModal from './DetectingModal'
+import DetectedConfirmModal from './DetectedConfirmModal'
 
 class SetLocation extends React.Component {
     constructor(props){

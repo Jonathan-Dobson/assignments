@@ -1,0 +1,55 @@
+:root{
+    --black: black;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: "Open Sans",sans-serif;
+    text-align: center;
+    color: var(--black);
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+p{
+    line-height: 30px;
+}
+nav{
+    height: 100vh;
+}
+.scroll-to-top {
+    position: sticky;
+    top: 20px;
+    text-align: right;
+}
+.scroll-to-top > a{
+    font-size: 20pt;
+    color: rgb(0, 0, 0, 0.4);
+    background-color: rgb(128, 128, 128, 0.1);
+    border-radius: 40px;
+    padding: 10px;
+    position: absolute;
+    right: 5px;
+    transform: rotateZ(-90deg);
+}
+.scroll-to-top-cover{
+    text-align: right;
+    position: relative;
+    top: 6px;
+
+}
+.scroll-to-top-cover > a{
+    font-size: 20pt;
+    color: white;
+    background-color: white;
+    padding: 20px;
+ 
+
+}
+
+main > section{
+    padding: 50px 1vw;
+}

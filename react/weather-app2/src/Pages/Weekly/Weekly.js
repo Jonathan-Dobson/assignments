@@ -13,7 +13,6 @@ const Weekly = (props) =>{
      <>
     <p>7 Day Forecast</p>
     <div>{props.city}, {props.state}, {props.country}</div>
-        <Link to='/setLocation' className="change-location">change location...</Link>
     <div className="summary">{props.weekSummary}</div>
     <div className="weekly-container">
         <TempBarChart data={arr}/>
@@ -21,6 +20,7 @@ const Weekly = (props) =>{
     <div className="current-conditions">
     </div>
     <div></div>
+        <Link to='/setLocation' className="change-location">change location...</Link>
     <button className="button" onClick={ ()=>props.history.push('/daily') }>Today's Weather</button> 
     </>
      )   

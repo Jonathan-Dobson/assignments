@@ -6,7 +6,7 @@ const SaveButton = withRouter(({history, announce}) => <button
     className="button-warning"
     onClick={ ()=>{
             announce('CLICKED SAVE DETECTED POSITION')
-            history.push('/')
+            history.push('/daily')
         }
     }>Save and Continue
 </button>)

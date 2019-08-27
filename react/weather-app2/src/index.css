@@ -49,7 +49,9 @@ body {
   /* background-color: rgb(202, 203, 235); */
 }
 .button:disabled{
-  background-color: rgb(154, 44, 175, 0.4);
+  background-color: rgb(154, 44, 175, 0.2);
+  border-color: rgb(154, 44, 175,0.3);
+
 }
 .button:disabled:hover{
   transform: translate(0)

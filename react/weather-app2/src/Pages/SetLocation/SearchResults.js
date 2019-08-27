@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import {WithState} from '../../StateProvider'
 
 export default WithState(({results, announce}) => results.map(place=>
-<Link to='/' 
+<Link to='/daily' 
         key={place[1]+place[2]} 
         style={{
             cursor: 'pointer',
