@@ -9,7 +9,7 @@ import App from './App';
 
 ReactDOM.render(
     <StateProvider>
-        <BrowserRouter>
+        <BrowserRouter basename='/weather'>
             <App />
         </BrowserRouter>
     </StateProvider>
