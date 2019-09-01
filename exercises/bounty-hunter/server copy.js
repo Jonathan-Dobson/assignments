@@ -4,10 +4,9 @@ const port = 3004
 const data = require('./data.json')
 const uuid = require('uuid/v4')
 
-app.use('/', express.json())
+app.use(express.json())
 
 app.get('/bounty',(req,res)=>{
-    console.log(data)
     res.send(data)
 })
 

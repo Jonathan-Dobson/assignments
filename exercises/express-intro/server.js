@@ -1,26 +1,45 @@
+
 const express = require('express')
 const app = express()
 const port = 3004
 const data = require('./data.json')
 const uuid = require('uuid/v4')
+const mongoose = require('mongoose')
+const Todos = require('./model/Todos')
+
 
 app.use(express.json())
 
+mongoose.connect('mongodb://localhost:27017/todos', {useNewUrlParser:true})
+    .then(e=>{
+        console.log('connected to mongodb')
+    })
+    .catch(err=>{
+        console.log(err);
+    })
+
+
 app.get('/todos',(req,res)=>{
-    res.send(data)
+    Todos.find((err,Todo)=>{
+        if(err) return res.status(500).send(err)
+        return res.status(200).send(Todo)
+    })
 })
 
 app.post('/todos', (req,res)=>{
-    const {name,description,imageUrl,completed} = req.body
-    data.push({name,description,imageUrl,completed,id: uuid()})
-    console.log(data);
-    res.send(data)
+    const newTodo = new Todos(req.body)
+    newTodo.save(err=>{
+        if(err) return res.status(500).send(err)
+        return res.status(200).send(newTodo)
+    })
+    
 })
 
-app.delete('/todos/:_id', (req,res)=>{
-    const index = data.findIndex(todo=>todo._id===req.params._id)
-    if(index>=0){data.splice(index,1)}
-    else res.send({res: 'item does not exist'})
+app.delete('/todos/:_id', (req, res) => {
+    const _id = req.params._id
+    let index = data.findIndex(todo => todo._id === _id )
+    console.log(index);
+    index!==-1&&data.splice(index, 1)
     res.send(data)
 })
 
