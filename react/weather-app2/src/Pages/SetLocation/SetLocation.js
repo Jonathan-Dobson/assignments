@@ -23,7 +23,8 @@ class SetLocation extends React.Component {
         e.preventDefault()
         const {value} = e.target.search
         if(value.length > 1){
-            axios.get(`http://127.0.0.1:3001/search/${value}`)
+            // axios.get(`http://127.0.0.1:3006/search/${value}`)
+            axios.get(`https://geofinder.fromjon.com/search/${value}`)
             .then(res=>{
                 this.setState({
                     search: value,

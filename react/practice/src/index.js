@@ -4,12 +4,13 @@ import ReactDOM from 'react-dom';
 // import App from './App'
 // import App from './Practice/NameBadge/'
 // import App from './Practice/ReactWars/'
-import App from './Practice/Todo/'
+// import App from './Practice/Todo/'
 // import App from './Practice/Context/'
+import App from './Practice/Dice/'
 
 
 
-
+import './index.css'
 
 // ReactDOM.render(
 //     <BrowserRouter>

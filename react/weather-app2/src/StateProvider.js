@@ -157,7 +157,7 @@ class StateProvider extends React.Component {
             case 'GET CITY FROM COORDINATES': {
                 const {lat,lng} = props
                 return new Promise((resolve,reject)=>{
-                    return axios.get(`http://127.0.0.1:3001/locate?lat=${lat}&lng=${lng}`)
+                    return axios.get(`http://geofinder.fromjon.com/locate?lat=${lat}&lng=${lng}`)
                     .then(res=>resolve(res.data))
                     .catch(e=>reject(`get city error: ${e}`))             
                 })
@@ -166,6 +166,7 @@ class StateProvider extends React.Component {
                 return new Promise(resolve=>this.setState({disableButtons: false},resolve(true)))
             }
             case 'REQUEST WEATHER DATA FROM DARKSKY': {
+                console.log(props.lat, props.lng);
                 return new Promise((resolve, reject)=>{
                     axios.get(`https://vschool-cors.herokuapp.com?url=https://api.darksky.net/forecast/${darkSkyKey}/${props.lat},${props.lng}`)
                     .then(({data})=>resolve({
