@@ -2,7 +2,7 @@ const limited = (function(){
     this.employees = ['Amy']
     this.managerPassword = 123
     this.hasher = function(password){
-        password = password
+        password = password + 'hash'
         return password
     }
     printEmployees = function(){

@@ -13,5 +13,4 @@ food.reverse() //9
 foodString = food.join(',') //10
 
 
-// console.log([fruit,vegetables, food])
 console.log(foodString)

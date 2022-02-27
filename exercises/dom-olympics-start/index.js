@@ -19,6 +19,7 @@ clearButton.addEventListener('click',e=>{
 })
 
 // // THEME STYLE
+
 // function reStyleAll(){
 //     for(i=0;i<rightMessages.length;i++){
 //         rightMessages[i].style.backgroundColor = themeStyles.right.bg
@@ -56,7 +57,11 @@ themeDropDown.addEventListener('change', e=>{
     reStyleAll()
 })
 
-// NEW MESSAGE COMPONENT
+// MESSAGE LIST
+
+let messageList = {}
+
+// CREATE NEW MESSAGE COMPONENT
 
 function createMessage(text){
     newMessage = document.createElement('div')
@@ -67,6 +72,7 @@ function createMessage(text){
 
 
 
+// SEND BUTTON EVENT
 
 let sendButton = document.getElementsByTagName('form')
 sendButton[0][1].addEventListener('click',e=>{
