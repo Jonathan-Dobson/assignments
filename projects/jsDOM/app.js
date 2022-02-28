@@ -5,7 +5,7 @@ String.prototype.toHTML = function (id){
     console.log(r)
 }
 
-"<div></div>".toHTML('root')
+`<div id="">some text</div>`.toHTML('root')
 
 
 

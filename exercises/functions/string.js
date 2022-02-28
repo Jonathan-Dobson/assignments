@@ -27,11 +27,11 @@
 
 
 
-function findMiddleIndex(str){
-    return parseInt(str.length / 2)
-}
+// function findMiddleIndex(str){
+//     return parseInt(str.length / 2)
+// }
 
-console.log(findMiddleIndex("hello"))
+// console.log(findMiddleIndex("hello"))
 
 
 

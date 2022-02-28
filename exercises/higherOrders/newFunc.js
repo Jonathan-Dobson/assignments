@@ -1,4 +1,4 @@
-console.log("hi there")
+
 
 function makeAllLow(str){
     return str.toLowerCase()

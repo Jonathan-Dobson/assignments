@@ -12,3 +12,6 @@ const ColoredInfoBox = (props) =>{
 }
 
 export default ColoredInfoBox
+
+
+

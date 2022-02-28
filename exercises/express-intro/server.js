@@ -7,7 +7,6 @@ const uuid = require('uuid/v4')
 const mongoose = require('mongoose')
 const Todos = require('./model/Todos')
 
-
 app.use(express.json())
 
 mongoose.connect('mongodb://localhost:27017/todos', {useNewUrlParser:true})
